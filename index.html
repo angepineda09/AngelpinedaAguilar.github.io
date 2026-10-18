@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name — Creative Designer & Developer</title>
+  <meta name="description" content="An independent creative designer and developer. Selected work, experiments, and background.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- A gently animated CSS background recreates the blurred monochrome atmosphere.
+       Replace the name, biography, links, project images, and project details below.
+       Navigation switches between views with CSS :target. No JavaScript needed. -->
+  <div class="atmosphere" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  <a class="skip-link" href="#home">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#home">Angel Pineda-Aguilar</a>
+    <nav class="main-nav" aria-label="Main navigation"><a href="#works">Works</a><a href="#certifications">Certifications</a><a href="#about">About</a><a href="mailto:hello@example.com">Contact ↗</a></nav>
+    <!-- Replace these URLs with your own profiles. -->
+    <!-- EDIT: replace profile URLs and email; add your résumé at assets/cv.pdf. -->
+    <nav class="social-nav" aria-label="Social and contact links"><a href="https://linkedin.com" aria-label="LinkedIn">LI</a><a href="mailto:hello@example.com" aria-label="Email">EM</a><a href="assets/cv.pdf" aria-label="View résumé">CV</a><a href="https://instagram.com" aria-label="Instagram">IG</a></nav>
+  </header>
+  <main>
+    <!-- Keep the home view LAST in the HTML. CSS shows it when no other view is targeted. -->
+    <section id="works" class="view works-view" aria-label="Selected works" tabindex="-1">
+      <!-- Radio inputs control the gallery layout; preview buttons select them with minimal JavaScript.
+           To add a slide, duplicate an article + input and add its checked rules in CSS.
+           For an unlimited list instead, remove inputs/labels and display articles in a grid. -->
+      <input class="slide-radio" type="radio" name="work" id="work-1" checked aria-label="Show Studio Journal project">
+      <input class="slide-radio" type="radio" name="work" id="work-2" aria-label="Show Millenium project">
+      <input class="slide-radio" type="radio" name="work" id="work-3" aria-label="Show Nostalgia project">
+      <div class="gallery">
+        <!-- PROJECT TEMPLATE: duplicate the complete article. Replace the preview
+             contents with <img src="assets/project.webp" alt="Project description"
+             width="1600" height="1000">. Keep paths relative for GitHub Pages.
+             The visual previews below are intentionally editable CSS artwork. -->
+        <article class="work-slide slide-one">
+          <!-- Compass cover: crisp vector artwork inspired by the project's icon.
+               The entire cover retains its existing select/open interaction. -->
+          <div class="project-preview compass-cover">
+            <a class="project-select" href="compass.html" data-project="work-1" aria-label="Open project 01: Compass, a Wells Fargo AI financial advisor concept"></a>
+            <div class="compass-cover-top" aria-hidden="true"><span>WELLS FARGO</span><span>AI INTEGRATION / 2026</span></div>
+            <div class="compass-cover-center" aria-hidden="true">
+              <svg class="compass-cover-icon" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="120" cy="120" r="91" stroke="currentColor" stroke-width="10"/>
+                <!-- Diagonal points, followed by the four longer cardinal points. -->
+                <g fill="currentColor">
+                  <path d="M120 105 62 62 105 120 120 135 178 178 135 120Z"/>
+                  <path d="M105 120 62 178 120 135 135 120 178 62 120 105Z"/>
+                </g>
+                <g fill="#ede8e0">
+                  <path d="M120 120 66 66 112 120Z"/>
+                  <path d="M120 120 66 174 120 128Z"/>
+                  <path d="M120 120 174 174 128 120Z"/>
+                  <path d="M120 120 174 66 120 112Z"/>
+                </g>
+                <path d="M120 5 138 102 235 120 138 138 120 235 102 138 5 120 102 102Z" fill="currentColor"/>
+                <g fill="#ede8e0">
+                  <path d="M120 12 120 120 106 106Z"/>
+                  <path d="M228 120 120 120 134 106Z"/>
+                  <path d="M120 228 120 120 134 134Z"/>
+                  <path d="M12 120 120 120 106 134Z"/>
+                </g>
+                <circle cx="120" cy="120" r="22" fill="#ede8e0" stroke="currentColor" stroke-width="2"/>
+              </svg>
+              <span class="compass-cover-wordmark">Compass</span>
+              <span class="compass-cover-description">Your financial co-pilot.</span>
+            </div>
+            <div class="compass-cover-bottom" aria-hidden="true"><span>PRODUCT DESIGN / SENIOR PROJECT</span><span class="compass-cover-arrow">↗</span></div>
+          </div>
+          <div class="work-information"><h1><a href="compass.html">Compass ↗</a></h1><dl><div><dt>Role</dt><dd>Product Designer &amp;<br>Systems &amp; AI Prototyper</dd></div><div><dt>Focus</dt><dd>Design Systems &amp; Components<br>UX/UI Design</dd></div><div><dt>Context</dt><dd>Senior Project</dd></div><div><dt>Stack</dt><dd>Figma, Codex,<br>Phoenix Code</dd></div><div class="work-year"><dt class="year-label">Year</dt><dd>2026</dd></div></dl></div>
+        </article>
+        <article class="work-slide slide-two">
+          <div class="project-preview stars-preview"><button class="project-select" type="button" data-project="work-2" aria-label="Show project 2: Millenium"></button><div class="star-window"><span class="star-mark">Ⅿ</span><span class="vertical-menu">MENU</span><div class="star-field"></div><span class="star-footer">A different perspective.</span></div></div>
+          <div class="work-information"><h1>Millenium ↗</h1><dl><div><dt>Role</dt><dd>Front-end & back-end<br>development</dd></div><div><dt>Focus</dt><dd>Immersive digital experience</dd></div><div><dt>Context</dt><dd>Independent concept</dd></div><div><dt>Stack</dt><dd>HTML, CSS</dd></div><div class="work-year"><dt class="year-label">Year</dt><dd>2026</dd></div></dl></div>
+        </article>
+        <article class="work-slide slide-three">
+          <div class="project-preview nostalgia-preview"><button class="project-select" type="button" data-project="work-3" aria-label="Show project 3: Nostalgia"></button><span class="nostalgia-orb"></span><strong>Nostalgia</strong><small>A taste of another time.</small></div>
+          <div class="work-information"><h1>Nostalgia ↗</h1><dl><div><dt>Role</dt><dd>Creative direction &<br>web design</dd></div><div><dt>Focus</dt><dd>Brand experience</dd></div><div><dt>Context</dt><dd>Independent concept</dd></div><div><dt>Stack</dt><dd>HTML, CSS</dd></div><div class="work-year"><dt class="year-label">Year</dt><dd>2025</dd></div></dl></div>
+        </article>
+      </div>
+      <div class="gallery-controls" aria-label="Select project"><label for="work-1">01<span class="sr-only"> Studio Journal</span></label><label for="work-2">02<span class="sr-only"> Millenium</span></label><label for="work-3">03<span class="sr-only"> Nostalgia</span></label></div>
+    </section>
+
+    <section id="about" class="view about-view" aria-label="About" tabindex="-1">
+      <!-- Replace this abstract identity card with a portrait:
+           <img class="portrait" src="assets/portrait.webp" alt="Your Name"> -->
+      <div class="identity-card"><div class="portrait-art" aria-hidden="true"></div><div class="identity-copy"><p><span>Your</span><span>Name</span></p><p>Creative & interactive<br>designer / developer</p><p><span>2026</span><span>[Now]</span></p><p><span>Texas</span><span>[USA]</span></p><p>Design, technology<br>& everyday life</p></div></div>
+      <dl class="biography"><div><dt>Bio</dt><dd><p>I’m a Communication Design student at Texas State University, with an Associate’s degree from ACC through the P-TECH program. My background spans early foundations at IBM and hands-on experience navigating complex technical constraints.</p><p>My focus centers firmly on User Experience design, information architecture, and complex systems design. I approach digital products not as decorative layouts, but as logical structures engineered to eliminate friction, optimize workflows, and solve real organizational problems driven by data and logistics.</p></dd></div><div><dt>Currently</dt><dd>Open for Full-Time Product Design &amp; UI/UX Roles</dd></div><div><dt>Formerly</dt><dd>Quantum Research Intern / IBM</dd></div><div><dt>Selected links</dt><dd><a href="https://linkedin.com" aria-label="LinkedIn">LinkedIn ↗</a><br><a href="mailto:hello@example.com" aria-label="Email">Email ↗</a><br><a href="assets/cv.pdf" aria-label="View résumé">Curriculum Vitae ↗</a><br><a href="https://instagram.com" aria-label="Instagram">Instagram ↗</a></dd></div></dl>
+      <aside class="services"><h2>Services</h2><ul><li>Product &amp; UX Design</li><li>UX Research</li><li>Branding</li><li>Logo Design</li><li>Experiential Design</li><li>Typography</li></ul><h2>Stack</h2><ul class="stack-list"><li>Figma</li><li>Illustrator</li><li>InDesign</li><li>Photoshop</li><li>Codex</li><li>PhoenixCode</li></ul></aside>
+    </section>
+
+    <section id="certifications" class="view certifications-view" aria-labelledby="certifications-title" tabindex="-1">
+      <h1 id="certifications-title">Certifications</h1>
+      <p class="certifications-intro">Professional learning, credentials, and continued development.</p>
+      <div class="certifications-scroll" role="region" aria-label="Certification list" tabindex="0">
+      <!-- Credentials listed newest first. Duplicate a complete details block
+           to add another credential; update title, issuer, and both time elements. -->
+      <div class="certification-table-heading" aria-hidden="true"><span>Certification</span><span>Issuer</span><span>Issued</span></div>
+      <details class="certification-row">
+        <summary><span>InDesign: Typography Part 1</span><span>LinkedIn</span><span><time datetime="2025-01">Jan 2025</time> / +</span></summary>
+        <p>Issued by LinkedIn<br>Issued <time datetime="2025-01">Jan 2025</time></p>
+        <!-- Add a verified credential URL here when available. -->
+      </details>
+      <details class="certification-row">
+        <summary><span>IBM Quantum Conversations</span><span>IBM</span><span><time datetime="2023-07">Jul 2023</time> / +</span></summary>
+        <p>Issued by IBM<br>Issued <time datetime="2023-07">Jul 2023</time></p>
+        <!-- Add a verified credential URL here when available. -->
+      </details>
+      <details class="certification-row">
+        <summary><span>Project Management Fundamentals</span><span>IBM</span><span><time datetime="2023-04">Apr 2023</time> / +</span></summary>
+        <p>Issued by IBM<br>Issued <time datetime="2023-04">Apr 2023</time></p>
+        <!-- Add a verified credential URL here when available. -->
+      </details>
+      <details class="certification-row">
+        <summary><span>Data Fundamentals</span><span>IBM</span><span><time datetime="2023-04">Apr 2023</time> / +</span></summary>
+        <p>Issued by IBM<br>Issued <time datetime="2023-04">Apr 2023</time></p>
+        <!-- Add a verified credential URL here when available. -->
+      </details>
+      <details class="certification-row">
+        <summary><span>Basic Principles of Design</span><span>IBM</span><span><time datetime="2023-04">Apr 2023</time> / +</span></summary>
+        <p>Issued by IBM<br>Issued <time datetime="2023-04">Apr 2023</time></p>
+        <!-- Add a verified credential URL here when available. -->
+      </details>
+      <details class="certification-row">
+        <summary><span>ESB: Entrepreneurship and Small Business v.2</span><span>Certiport - A Pearson VUE Business</span><span><time datetime="2023-04">Apr 2023</time> / +</span></summary>
+        <p>Issued by Certiport - A Pearson VUE Business<br>Issued <time datetime="2023-04">Apr 2023</time></p>
+        <!-- Add a verified credential URL here when available. -->
+      </details>
+      <details class="certification-row">
+        <summary><span>Working in a Digital World: Professional Skills</span><span>IBM</span><span><time datetime="2022-02">Feb 2022</time> / +</span></summary>
+        <p>Issued by IBM<br>Issued <time datetime="2022-02">Feb 2022</time></p>
+        <!-- Add a verified credential URL here when available. -->
+      </details>
+      <details class="certification-row">
+        <summary><span>Job Application Essentials</span><span>IBM</span><span><time datetime="2022-02">Feb 2022</time> / +</span></summary>
+        <p>Issued by IBM<br>Issued <time datetime="2022-02">Feb 2022</time></p>
+        <!-- Add a verified credential URL here when available. -->
+      </details>
+      </div>
+    </section>
+
+    <section id="home" class="view home-view" aria-labelledby="home-title" tabindex="-1">
+      <div class="home-information"><p>TXST ComDes '27</p><p>User Experience Designer.<br>I build clean digital screens<br>focused on clear ideas<br>and smooth interactions.</p><ul><li>Product &amp; UX Design</li><li>UX Research</li><li>Branding</li><li>Logo Design</li><li>Experiential Design</li><li>Typography</li></ul><p class="location">Based in<br>Austin, Texas</p></div>
+      <!-- Wide display type matches the screenshot's four-line, right-aligned silhouette.
+           Shorter names fit best; adjust the font sizes in CSS for your own wording. -->
+      <h1 id="home-title" class="hero-title personalized-title"><span class="name-line"><span>Angel</span><span>Pineda</span></span><span class="title-line creative-line">User Experience</span><span class="title-line technology-line">Researcher</span><span class="title-line developer-line">&amp; Designer</span></h1>
+      <span class="version">v26.0</span>
+    </section>
+  </main>
+  <!-- Pointer input gently steers the CSS background. No continuous JS loop:
+       updates are batched to one frame, and CSS eases each movement.
+       Touch devices use the ambient animation without intercepting scrolling. -->
+  <script>
+    // Fold the outgoing view upward, then unfold the selected view downward.
+    // Hash links still work normally without JavaScript or with reduced motion.
+    (() => {
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+      let switching = false;
+      let pendingTarget = null;
+      const activeView = () => document.querySelector('.view:target') || document.getElementById('home');
+
+      async function switchView(target) {
+        if (switching) { pendingTarget = target; return; }
+        const current = activeView();
+        if (current === target) return;
+        if (reduced.matches || !current.animate) {
+          window.location.hash = target.id;
+          return;
+        }
+        switching = true;
+        const main = document.querySelector('main');
+        main.inert = true;
+        try {
+          const exit = current.animate([
+            { clipPath: 'inset(0 0 0% 0)', opacity: 1 },
+            { clipPath: 'inset(0 0 100% 0)', opacity: 0 }
+          ], { duration: 340, easing: 'cubic-bezier(.65, 0, .35, 1)', fill: 'forwards' });
+          await exit.finished;
+          // Brief breathing room between closing and opening views.
+          await new Promise((resolve) => window.setTimeout(resolve, 220));
+          window.location.hash = target.id;
+          const entry = target.animate([
+            { clipPath: 'inset(0 0 100% 0)', opacity: 0 },
+            { clipPath: 'inset(0 0 0% 0)', opacity: 1 }
+          ], { duration: 650, easing: 'cubic-bezier(.22, 1, .36, 1)', fill: 'both' });
+          exit.cancel();
+          await entry.finished;
+          entry.cancel();
+        } finally {
+          main.inert = false;
+          switching = false;
+          if (pendingTarget) {
+            const next = pendingTarget;
+            pendingTarget = null;
+            switchView(next);
+          }
+        }
+      }
+
+      document.querySelectorAll('.site-header a[href^="#"]').forEach((link) => {
+        link.addEventListener('click', (event) => {
+          if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+          const target = document.getElementById(link.hash.slice(1));
+          if (!target || !target.classList.contains('view')) return;
+          event.preventDefault();
+          switchView(target);
+        });
+      });
+    })();
+
+    // Side previews select a project. The centered first project opens its case study.
+    document.querySelectorAll('.project-select').forEach((button) => {
+      button.addEventListener('click', (event) => {
+        const selection = document.getElementById(button.dataset.project);
+        // Follow the native same-tab link when this project is already centered.
+        if (button.matches('a[href]') && selection.checked) return;
+        event.preventDefault();
+        selection.checked = true;
+      });
+    });
+
+    (() => {
+      const background = document.querySelector('.atmosphere');
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+      let frame = 0;
+      let x = 0;
+      let y = 0;
+
+      function applyPosition() {
+        background.style.setProperty('--pointer-x', `${x}px`);
+        background.style.setProperty('--pointer-y', `${y}px`);
+        frame = 0;
+      }
+
+      function queuePosition() {
+        if (!frame) frame = requestAnimationFrame(applyPosition);
+      }
+
+      function resetPosition() {
+        x = 0;
+        y = 0;
+        queuePosition();
+      }
+
+      window.addEventListener('pointermove', (event) => {
+        if (reducedMotion.matches || event.pointerType === 'touch') return;
+        // Maximum shift: 28px horizontally, 20px vertically.
+        x = (event.clientX / window.innerWidth - 0.5) * 56;
+        y = (event.clientY / window.innerHeight - 0.5) * 40;
+        queuePosition();
+      }, { passive: true });
+
+      document.documentElement.addEventListener('pointerleave', resetPosition);
+      window.addEventListener('blur', resetPosition);
+      reducedMotion.addEventListener('change', resetPosition);
+    })();
+  </script>
+
+  <!-- Match the view-switch transition when navigating between HTML pages. -->
+  <script>
+    (() => {
+      const main = document.querySelector('main');
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+      const transitionKey = 'portfolio-page-entry';
+      let entering = document.body.classList.contains('case-study-page');
+      let leaving = false;
+      try {
+        entering = sessionStorage.getItem(transitionKey) === location.pathname || entering;
+        sessionStorage.removeItem(transitionKey);
+      } catch (_) { /* Local-file privacy settings may disable session storage. */ }
+
+      if (entering && !reduced.matches && main.animate) {
+        main.animate([
+          { clipPath: 'inset(0 0 100% 0)', opacity: 0 },
+          { clipPath: 'inset(0 0 0% 0)', opacity: 1 }
+        ], { duration: 650, easing: 'cubic-bezier(.22, 1, .36, 1)' });
+      }
+
+      document.addEventListener('click', async (event) => {
+        if (event.defaultPrevented || event.button !== 0 || event.metaKey ||
+            event.ctrlKey || event.shiftKey || event.altKey) return;
+        const link = event.target.closest('a[href]');
+        if (!link || link.hasAttribute('download') || (link.target && link.target !== '_self')) return;
+        const url = new URL(link.href, location.href);
+        if (url.origin !== location.origin || url.pathname === location.pathname ||
+            !/\/(?:index|compass)\.html$/.test(url.pathname)) return;
+        if (reduced.matches || !main.animate) return;
+        event.preventDefault();
+        if (leaving) return;
+        leaving = true;
+        try {
+          await main.animate([
+            { clipPath: 'inset(0 0 0% 0)', opacity: 1 },
+            { clipPath: 'inset(0 0 100% 0)', opacity: 0 }
+          ], { duration: 340, easing: 'cubic-bezier(.65, 0, .35, 1)', fill: 'forwards' }).finished;
+          await new Promise((resolve) => setTimeout(resolve, 220));
+          try { sessionStorage.setItem(transitionKey, url.pathname); } catch (_) {}
+        } finally {
+          location.assign(url.href);
+        }
+      });
+
+      // Restore content if the browser brings this document back from its cache.
+      window.addEventListener('pageshow', (event) => {
+        if (event.persisted) {
+          main.getAnimations().forEach((animation) => animation.cancel());
+          leaving = false;
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
