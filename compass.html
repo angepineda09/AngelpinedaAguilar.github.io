@@ -28,21 +28,22 @@
       <div class="case-hero-heading">
         <p class="case-mono">Product design / AI Prototype / Conversational AI</p>
         <h1 id="case-title">COMPASS<br>AI FINANCIAL<br>CO-PILOT</h1>
-        <p class="case-subtitle">Closing the financial engagement gap through humanized conversational AI.</p>
+        <p class="case-subtitle">Helping young adults turn everyday money questions into a plan they can understand.</p>
       </div>
       <div class="case-summary-grid">
         <div class="case-summary">
-          <!-- EDIT TEXT: replace this illustrative summary with your research-backed project story. -->
+          <!-- PROJECT OVERVIEW: the user situation, design response, and prototype scope. -->
           <p class="case-mono">Project overview</p>
-          <p>Personal finance tools are often reactive: tracking where money went rather than guiding where it should go. Compass explores how an integrated mobile workflow and an intelligent conversational co-pilot could transform complex banking data into actionable insights and identify a clear next step.</p>
-          <p class="case-note"><strong>Interactive Project.</strong> Built using Figma, Codex, and Phoenix Code with live OpenAI API integration to demonstrate functional conversational UX.</p>
+          <p>An unexpected car repair can turn a simple money question into a stressful decision: use savings, cut spending, or put it on a credit card?</p>
+          <p>I designed Compass to explore how a conversational assistant could help young adults work through those choices inside a familiar banking experience. Users can ask a question, inspect the calculations behind a suggested plan, and decide whether to approve the proposal.</p>
+          <p class="case-note">Independent student concept exploring a Wells Fargo integration. The working prototype uses synthetic account data; approvals save proposals without moving money.</p>
         </div>
         <!-- EDIT TEXT: update role, timeline, tools, and deliverables. -->
         <dl class="case-metadata case-mono">
           <div><dt>Role</dt><dd>Product Designer &amp;<br>Systems &amp; AI Prototyper</dd></div>
           <div><dt>Timeline</dt><dd>September 2026 – October 2026</dd></div>
-          <div><dt>Tools</dt><dd>Figma, FigJam, Codex, Phoenix Code, OpenAI API</dd></div>
-          <div><dt>Deliverables</dt><dd>Working prototype backend powered by OpenAI API, Codex, and Phoenix Code to test live conversational states and agent logic.</dd></div>
+          <div><dt>Tools</dt><dd>Figma, FigJam, Google Forms, Excel, Codex, Phoenix Code, Python, OpenAI API</dd></div>
+          <div><dt>Deliverables</dt><dd>Research, user flows, interface designs, and a working AI-assisted web prototype.</dd></div>
         </dl>
       </div>
     </section>
@@ -54,12 +55,12 @@
          with ONE of the following. Keep media paths relative to this HTML.
 
          VIDEO:
-         <video autoplay loop muted playsinline src="assets/compass-hero.mp4"></video>
+         <video autoplay loop muted playsinline src="Assets/Compass/compass-hero.mp4"></video>
          For pause controls and an initial still frame, add:
-         controls poster="assets/compass-hero-poster.jpg" preload="metadata"
+         controls poster="Assets/Compass/compass-hero-poster.jpg" preload="metadata"
 
          IMAGE:
-         <img src="assets/compass-hero.png" alt="Compass mobile dashboard and AI co-pilot overview"
+         <img src="Assets/Compass/compass-hero.png" alt="Compass mobile dashboard and AI co-pilot overview"
               width="1600" height="900" loading="lazy" decoding="async">
          ================================================================ -->
     <section class="case-block case-showcase" aria-label="Compass product overview">
@@ -69,8 +70,8 @@
                Muted playback enables autoplay; controls allow pausing. -->
           <video autoplay loop muted playsinline controls preload="metadata"
                  aria-label="Compass financial co-pilot project walkthrough">
-            <source src="assets/compass-portfolio.mp4" type="video/mp4">
-            Your browser does not support embedded video. <a href="assets/compass-portfolio.mp4">Watch the Compass walkthrough</a>.
+            <source src="Assets/Compass/compass-portfolio.mp4" type="video/mp4">
+            Your browser does not support embedded video. <a href="Assets/Compass/compass-portfolio.mp4">Watch the Compass walkthrough</a>.
           </video>
         </div>
         <!-- EDIT TEXT: describe what the visitor should notice in this media. -->
@@ -90,34 +91,27 @@
     <section class="case-block case-text-only" aria-labelledby="text-chapter-title">
       <h2 id="text-chapter-title" class="case-mono case-text-label">The context</h2>
       <div class="case-text-content">
-        <!-- EDIT TEXT: context narrative. -->
-        <p>Retail banking applications are built for transaction management, not behavioral guidance. For young users (ages 18–24), digital banking interfaces have abstracted money into numbers on a screen, leading to financial detachment, avoidance, and anxiety.</p>
-        <!-- Add research citations or source links alongside these statistics before publishing. -->
-        <h3 class="case-mono case-data-label">The Data Behind the Problem</h3>
-        <ul>
-          <li><strong>Digital Detachment:</strong> Over <strong>90%</strong> of Gen Z relies entirely on mobile banking and tap-to-pay, causing money to feel abstract and leading to unmanaged cash flow.</li>
-          <li><strong>Impulse Spending (&quot;Vibes&quot;):</strong> <strong>57%</strong> of young adults identify impulse buying as their primary budget-breaker—making them twice as likely to spend based on emotional impulses rather than plan limits.</li>
-          <li><strong>The Avoidance Loop:</strong> <strong>46%</strong> of Gen Z adults actively avoid checking their account balances due to financial stress.</li>
-          <li><strong>Lacking Safety Nets:</strong> Only <strong>45%</strong> of young adults (18–29) can cover a $400 emergency expense without borrowing or taking on debt.</li>
-          <li><strong>Credit Misunderstandings:</strong> While most college undergraduates hold credit cards, few understand compound interest or penalty structures, often treating credit as extended cash flow.</li>
-        </ul>
-        <h3 class="case-mono case-data-label">Problem Statement</h3>
-        <p>How might we redesign mobile banking for 18–24-year-olds to bridge the gap between digital detachment and long-term financial stability while using conversational AI to intercept impulse spending, demystify credit, and replace financial anxiety with proactive guidance?</p>
+        <p>A bank balance tells you what is available now. It doesn’t necessarily tell you what you can set aside after bills, or whether using a credit card would leave you worse off.</p>
+        <p>I focused on young adults navigating those decisions as they begin managing their own income and expenses. The opportunity was to make the next step easier to understand without taking control away from them.</p>
+
+        <h3 class="case-mono case-data-label">What the Research Suggested</h3>
+        <div class="context-research-findings">
+          <p><strong>Checking a balance can be stressful:</strong> U.S. Bank and Morning Consult reported that <strong>46% of Gen Z adults</strong> said they avoid checking their bank account balances. <a href="https://www.usbank.com/about-us-bank/news-and-stories/article-library/survey-financial-avoidance-trending-with-younger-generations-these-digital-tools-can-help.html" target="_blank" rel="noopener">Source: U.S. Bank ↗</a></p>
+          <p><strong>A small emergency can put pressure on a budget:</strong> In the Federal Reserve’s 2025 survey, <strong>45% of adults ages 18–29</strong> said they would cover a $400 emergency expense completely using cash or its equivalent. <a href="https://www.federalreserve.gov/consumerscommunities/sheddataviz/unexpectedexpenses-table.html" target="_blank" rel="noopener">Source: Federal Reserve ↗</a></p>
+        </div>
+        <p class="case-note">These external studies provided context for the project. They are separate from my own 10-person survey, discussed in Research &amp; Insights.</p>
+
+        <h3 class="case-mono case-data-label">The Design Question</h3>
+        <p>How might we help young adults understand what they can afford, compare their options, and choose a next step while staying in control of their money?</p>
+
         <h3 class="case-mono case-data-label">Product Opportunity</h3>
-        <p>To solve these specific friction points, <strong>Compass</strong> was designed with four core capabilities:</p>
+        <p>I explored a conversational co-pilot within a familiar banking experience that could help users:</p>
         <ul class="case-capabilities">
-          <li><strong>Behavioral Interception:</strong> Proactive, non-judgmental prompts that help users pause before impulse purchases.</li>
-          <li><strong>Contextual Clarity:</strong> Translating abstract terms (compound interest, penalty APRs, credit utilization) into simple, real-time feedback.</li>
-          <li><strong>Low-Friction Visibility:</strong> A conversational interface that removes the fear of opening the app, letting users ask quick questions without digging through dense account tabs.</li>
-          <li><strong>Adaptive Cash Flow Management:</strong> Guidance designed around variable income sources (gig work, campus jobs, parental support).</li>
+          <li>Ask a money question in everyday language.</li>
+          <li>Review calculations grounded in their selected accounts.</li>
+          <li>Turn a recommendation into a proposal they can inspect and approve.</li>
         </ul>
-        <!-- Optional subheading and list: uncomment and personalize if useful.
-        <h3>Key findings</h3>
-        <ul>
-          <li>Your first research finding.</li>
-          <li>Your second research finding.</li>
-        </ul>
-        -->
+        <p class="case-note">The prototype tests that interaction using synthetic financial data; it does not execute bank transfers.</p>
       </div>
     </section>
 
@@ -131,12 +125,12 @@
 
          VIDEO:
          <video autoplay loop muted playsinline controls preload="metadata"
-                src="assets/compass-challenge.mp4"
-                poster="assets/compass-challenge-poster.jpg"
+                src="Assets/Compass/compass-challenge.mp4"
+                poster="Assets/Compass/compass-challenge-poster.jpg"
                 aria-label="Walkthrough of the Compass goal-setting flow"></video>
 
          IMAGE:
-         <img src="assets/compass-challenge.png" alt="Compass goal-setting screen"
+         <img src="Assets/Compass/compass-challenge.png" alt="Compass goal-setting screen"
               width="900" height="1600" loading="lazy" decoding="async">
          Mobile media uses object-fit: contain so no interface content is cropped.
          ================================================================ -->
@@ -144,7 +138,8 @@
     <section class="case-block case-text-only" aria-labelledby="survey-data-title">
       <h2 id="survey-data-title" class="case-mono case-text-label">User Survey</h2>
       <div class="case-text-content">
-        <p>To test assumptions around financial habits and AI sentiment, I conducted a targeted survey (<em>Financial Behavior &amp; AI Agent Survey</em>) with a sample of 10 young adults.</p>
+        <p>Before deciding what Compass should do, I shared a survey through my Instagram story and received 10 responses about banking habits, savings challenges, and preferences for AI assistance.</p>
+        <p class="case-note survey-method-note">Participants came from my personal network. I used these responses to guide early design decisions rather than represent all young adults.</p>
       </div>
     </section>
 
@@ -154,50 +149,49 @@
       <div class="case-block-copy">
         <!-- EDIT TEXT: add a survey finding and explain what it means for the design. -->
         <h2 id="survey-finding-title">Survey findings</h2>
-        <h3>Account Usage &amp; Tracking Behavior</h3>
-        <ul>
-          <li><strong>100% of participants</strong> actively use checking accounts, and <strong>90%</strong> use credit cards.</li>
-          <li><strong>60%</strong> track their spending simply by checking their banking app balance periodically, while <strong>20%</strong> don't actively track at all.</li>
-          <li><strong>Takeaway:</strong> Most respondents rely on periodic balance checks, suggesting an opportunity for low-friction spending visibility inside their primary banking app.</li>
+        <h3>Checking a balance was the main way respondents tracked spending</h3>
+        <ul class="survey-finding-points">
+          <li><strong>Finding:</strong> Six of 10 checked their banking balance periodically, while two did not actively track spending. All used checking accounts, and nine also used credit cards.</li>
+          <li><strong>Design response:</strong> Make relevant account information easy to access without asking users to maintain another budgeting system.</li>
         </ul>
 
       </div>
       <figure class="case-figure case-landscape-figure survey-gallery">
         <div class="survey-question-track" tabindex="0" role="region" aria-label="Survey questions, scroll horizontally to explore nine images">
             <div class="survey-question" id="survey-question-1" role="group" aria-label="Question 1 of 9">
-              <img src="assets/compass-survey-01.webp" alt="Academic and employment status: 60% full-time students, 20% part-time students and working, 10% recent graduates, 10% other." width="1532" height="628" loading="lazy" decoding="async">
+              <img src="Assets/Compass/compass-survey-01.webp" alt="Academic and employment status: 60% full-time students, 20% part-time students and working, 10% recent graduates, 10% other." width="1532" height="628" loading="lazy" decoding="async">
               <span class="survey-toolbar-mask" aria-hidden="true" style="top: 15.384%; height: 8.745%"></span>
             </div>
             <div class="survey-question" id="survey-question-2" role="group" aria-label="Question 2 of 9">
-              <img src="assets/compass-survey-02.webp" alt="Financial accounts used: 100% checking, 30% traditional savings, 90% credit cards, 50% external high-yield savings, 40% investment or budgeting apps, 10% Fidelity." width="1532" height="707" loading="lazy" decoding="async">
+              <img src="Assets/Compass/compass-survey-02.webp" alt="Financial accounts used: 100% checking, 30% traditional savings, 90% credit cards, 50% external high-yield savings, 40% investment or budgeting apps, 10% Fidelity." width="1532" height="707" loading="lazy" decoding="async">
               <span class="survey-toolbar-mask" aria-hidden="true" style="top: 11.030%; height: 9.845%"></span>
             </div>
             <div class="survey-question" id="survey-question-3" role="group" aria-label="Question 3 of 9">
-              <img src="assets/compass-survey-03.webp" alt="Spending tracking: 60% check bank balances periodically, 20% use spreadsheets or manual tools, 20% do not actively track." width="1532" height="672" loading="lazy" decoding="async">
+              <img src="Assets/Compass/compass-survey-03.webp" alt="Spending tracking: 60% check bank balances periodically, 20% use spreadsheets or manual tools, 20% do not actively track." width="1532" height="672" loading="lazy" decoding="async">
               <span class="survey-toolbar-mask" aria-hidden="true" style="top: 12.959%; height: 9.358%"></span>
             </div>
             <div class="survey-question" id="survey-question-4" role="group" aria-label="Question 4 of 9">
-              <img src="assets/compass-survey-04.webp" alt="Saving obstacles: 50% struggle to connect daily spending with long-term goals, 20% remembering to save, 20% keeping goal money separate, 10% choosing where to save." width="1532" height="672" loading="lazy" decoding="async">
+              <img src="Assets/Compass/compass-survey-04.webp" alt="Saving obstacles: 50% struggle to connect daily spending with long-term goals, 20% remembering to save, 20% keeping goal money separate, 10% choosing where to save." width="1532" height="672" loading="lazy" decoding="async">
               <span class="survey-toolbar-mask" aria-hidden="true" style="top: 12.959%; height: 9.358%"></span>
             </div>
             <div class="survey-question" id="survey-question-5" role="group" aria-label="Question 5 of 9">
-              <img src="assets/compass-survey-05.webp" alt="Financial product comfort: 40% very comfortable, 60% moderately comfortable; no respondents selected uncomfortable or overwhelmed." width="1532" height="673" loading="lazy" decoding="async">
+              <img src="Assets/Compass/compass-survey-05.webp" alt="Financial product comfort: 40% very comfortable, 60% moderately comfortable; no respondents selected uncomfortable or overwhelmed." width="1532" height="673" loading="lazy" decoding="async">
               <span class="survey-toolbar-mask" aria-hidden="true" style="top: 12.904%; height: 9.372%"></span>
             </div>
             <div class="survey-question" id="survey-question-6" role="group" aria-label="Question 6 of 9">
-              <img src="assets/compass-survey-06.webp" alt="Bank product recommendations: 80% report no change in trust, 10% slightly increased trust, 10% decreased trust." width="1532" height="674" loading="lazy" decoding="async">
+              <img src="Assets/Compass/compass-survey-06.webp" alt="Bank product recommendations: 80% report no change in trust, 10% slightly increased trust, 10% decreased trust." width="1532" height="674" loading="lazy" decoding="async">
               <span class="survey-toolbar-mask" aria-hidden="true" style="top: 12.849%; height: 9.386%"></span>
             </div>
             <div class="survey-question" id="survey-question-7" role="group" aria-label="Question 7 of 9">
-              <img src="assets/compass-survey-07.webp" alt="AI control preference: 60% suggest and confirm, 40% advisory only, 0% full automation." width="1532" height="674" loading="lazy" decoding="async">
+              <img src="Assets/Compass/compass-survey-07.webp" alt="AI control preference: 60% suggest and confirm, 40% advisory only, 0% full automation." width="1532" height="674" loading="lazy" decoding="async">
               <span class="survey-toolbar-mask" aria-hidden="true" style="top: 12.849%; height: 9.386%"></span>
             </div>
             <div class="survey-question" id="survey-question-8" role="group" aria-label="Question 8 of 9">
-              <img src="assets/compass-survey-08.webp" alt="AI trust factors: 80% math explanations; 60% confirmation steps, data privacy guarantees, and source citations; 40% spending limits." width="1532" height="704" loading="lazy" decoding="async">
+              <img src="Assets/Compass/compass-survey-08.webp" alt="AI trust factors: 80% math explanations; 60% confirmation steps, data privacy guarantees, and source citations; 40% spending limits." width="1532" height="704" loading="lazy" decoding="async">
               <span class="survey-toolbar-mask" aria-hidden="true" style="top: 11.195%; height: 9.803%"></span>
             </div>
             <div class="survey-question" id="survey-question-9" role="group" aria-label="Question 9 of 9">
-              <img src="assets/compass-survey-09.webp" alt="Financial plan format: 70% interactive dashboard cards, 20% chat threads, 10% summarized notifications." width="1532" height="673" loading="lazy" decoding="async">
+              <img src="Assets/Compass/compass-survey-09.webp" alt="Financial plan format: 70% interactive dashboard cards, 20% chat threads, 10% summarized notifications." width="1532" height="673" loading="lazy" decoding="async">
               <span class="survey-toolbar-mask" aria-hidden="true" style="top: 12.904%; height: 9.372%"></span>
             </div>
         </div>
@@ -207,222 +201,145 @@
       <!-- Paired survey insights share one row on desktop. -->
       <div class="survey-insights-grid">
         <div class="survey-insight">
-        <h3>Saving &amp; Financial Comfort</h3>
-        <ul>
-          <li><strong>50%</strong> cited that their biggest saving obstacle is that it's <em>"hard to see how small daily spending affects long-term goals"</em>.</li>
-          <li><strong>60%</strong> feel moderately comfortable evaluating financial products: they know the basic terms, but comparisons take too much effort. The remaining <strong>40%</strong> feel very comfortable; <strong>0%</strong> selected uncomfortable or overwhelmed.</li>
-          <li><strong>Takeaway:</strong> Compass must bridge the disconnect between daily micro-purchases and macro goals while translating complex rate comparisons into plain language.</li>
+        <h3>The connection between everyday spending and savings goals was unclear</h3>
+        <ul class="survey-finding-points">
+          <li><strong>Finding:</strong> Five of 10 identified difficulty seeing how small purchases affect longer-term goals as their biggest saving obstacle. Six understood basic financial-product terms but felt comparisons took too much effort.</li>
+          <li><strong>Design response:</strong> Connect suggested savings amounts to a concrete goal and explain the calculations in plain language.</li>
         </ul>
 
         </div>
         <div class="survey-insight">
-        <h3>AI Trust, Autonomy, &amp; UI Preference</h3>
-        <ul>
-          <li><strong>60%</strong> preferred a <strong>Suggest &amp; Confirm (Human-in-the-Loop)</strong> model where the AI presents the plan but requires explicit approval before moving any money. <strong>0%</strong> wanted full automation.</li>
-          <li><strong>80%</strong> stated that seeing <strong>step-by-step math explanations ("Chain of Thought")</strong> would make them trust an AI financial agent.</li>
-          <li><strong>70%</strong> preferred viewing complex financial plans generated as <strong>interactive dashboard artifacts/cards</strong> rather than scrolling chat threads.</li>
-          <li><strong>Takeaway:</strong> These responses suggest prioritizing clear math explanations, explicit user approval, and financial plans presented as pinned dashboard artifacts.</li>
+        <h3>Respondents wanted help without giving up control</h3>
+        <ul class="survey-finding-points">
+          <li><strong>Finding:</strong> Six preferred reviewing and confirming an AI-generated plan, while four wanted advice only. None chose full automation. Eight selected calculation breakdowns as something that would increase their trust, and seven preferred plans displayed as persistent dashboard cards.</li>
+          <li><strong>Design response:</strong> Let users inspect a recommendation, decide whether to create a proposal, and review it outside the chat before approving.</li>
         </ul>
+
         </div>
       </div>
     </section>
 
     <section class="case-block case-split case-persona" aria-labelledby="persona-title">
       <div class="case-block-copy">
-        <!-- PERSONA: edit Santiago's research-based profile here. -->
         <h2 id="persona-title">PERSONA</h2>
         <p>Santiago Ramirez</p>
-        <ul>
-          <li><strong>Age:</strong> 22 y/o</li>
-          <li><strong>Occupation:</strong> College Senior &amp; Part-Time Worker</li>
+        <p class="case-note persona-scenario-note">Fictional scenario persona informed by survey patterns. Personal details were created to give the prototype a consistent testing context.</p>
+        <ul class="persona-profile">
+          <li><strong>Age:</strong> 22</li>
+          <li><strong>Occupation:</strong> College senior and part-time worker</li>
           <li><strong>Location:</strong> Austin, TX</li>
-          <li><strong>Tracking Method:</strong> Periodically checks bank app balances</li>
-          <li><strong>Account Ecosystem:</strong> Active checking account, credit card, and external high-yield savings account</li>
+          <li><strong>Banking setup:</strong> Checking account, credit card, and an external high-yield savings account</li>
+          <li><strong>Current habit:</strong> Checks balances periodically rather than maintaining a detailed budget</li>
         </ul>
-        <h3 class="case-mono persona-label">Bio</h3>
-        <p>A 22-year-old college senior balancing part-time work, variable income, and rising living expenses. Santiago is determined to build long-term financial health and be perceived as financially responsible, but experiences anxiety when checking account balances and struggles to see how everyday spending impacts long-term goals. Santiago needs an objective AI co-pilot that provides clear math breakdowns, dashboard artifact cards, and human-in-the-loop control before taking any financial action.</p>
-        <h3 class="case-mono persona-label">Roles</h3>
-        <p>College Student, Wells Fargo User, Young User</p>
+        <h3 class="case-mono persona-label">His Situation</h3>
+        <p>Santiago is balancing college, part-time work, and everyday expenses. He checks his balance to understand where he stands, but needs more context before deciding how much he can set aside.</p>
+        <p>After hitting a post while parallel parking, he faces an unexpected car repair. He needs to compare saving toward the cost with using his credit card, while keeping enough money available for bills.</p>
 
       </div>
       <div class="persona-visual-column">
-      <figure class="case-figure case-mobile-figure">
-        <div class="case-media case-media-mobile">
-          <!-- PERSONA IMAGE: replace the placeholder with:
-               <img src="assets/compass-persona.webp" alt="Describe the persona portrait">
-          -->
-          <img src="assets/santiago-persona.webp" alt="AI-generated illustrative portrait of Santiago Ramirez, a young college student outdoors" width="1024" height="1536" loading="lazy" decoding="async">
-        </div>
-        <figcaption class="case-mono">Santiago Ramirez / Persona Portrait</figcaption>
-      </figure>
-        <section class="persona-personality" aria-labelledby="personality-title">
-          <h3 id="personality-title" class="case-mono">Personality</h3>
-          <!-- Static persona scales, not interactive controls.
-               EDIT --trait-position (0% = left trait; 100% = right trait).
-               Marker positions approximate the supplied reference. -->
-          <ul class="personality-traits">
-          <li class="personality-trait">
-            <div class="personality-labels"><span>Introvert</span><span>Extrovert</span></div>
-            <div class="personality-track" role="img" aria-label="Introvert to Extrovert: near the midpoint, slightly toward introvert" style="--trait-position: 47%"><span></span></div>
-          </li>
-          <li class="personality-trait">
-            <div class="personality-labels"><span>Analytical</span><span>Creative</span></div>
-            <div class="personality-track" role="img" aria-label="Analytical to Creative: leans analytical" style="--trait-position: 35%"><span></span></div>
-          </li>
-          <li class="personality-trait">
-            <div class="personality-labels"><span>Busy</span><span>Time rich</span></div>
-            <div class="personality-track" role="img" aria-label="Busy to Time rich: strongly toward busy" style="--trait-position: 9%"><span></span></div>
-          </li>
-          <li class="personality-trait">
-            <div class="personality-labels"><span>Messy</span><span>Organized</span></div>
-            <div class="personality-track" role="img" aria-label="Messy to Organized: leans organized" style="--trait-position: 73%"><span></span></div>
-          </li>
-          <li class="personality-trait">
-            <div class="personality-labels"><span>Independent</span><span>Team player</span></div>
-            <div class="personality-track" role="img" aria-label="Independent to Team player: strongly independent" style="--trait-position: 13%"><span></span></div>
-          </li>
-          <li class="personality-trait">
-            <div class="personality-labels"><span>Passive</span><span>Active</span></div>
-            <div class="personality-track" role="img" aria-label="Passive to Active: strongly passive" style="--trait-position: 2%"><span></span></div>
-          </li>
-          <li class="personality-trait">
-            <div class="personality-labels"><span>Safe</span><span>Risky</span></div>
-            <div class="personality-track" role="img" aria-label="Safe to Risky: strongly toward safe" style="--trait-position: 7%"><span></span></div>
-          </li>
-          </ul>
-        </section>
-
-
+        <figure class="case-figure case-mobile-figure">
+          <div class="case-media case-media-mobile">
+            <img src="Assets/Compass/santiago-persona.webp" alt="AI-generated illustrative portrait of Santiago Ramirez, a fictional college-student persona" width="1024" height="1536" loading="lazy" decoding="async">
+          </div>
+          <figcaption class="case-mono">Santiago Ramirez / Persona Portrait<span class="persona-portrait-note">Portrait generated with AI to illustrate the fictional persona.</span></figcaption>
+        </figure>
       </div>
     </section>
 
-    <!-- EMPATHY MAPPING / standalone text-only research chapter. -->
+    <!-- Persona goal and needs continue at the standard text-only width. -->
+    <section class="case-block case-text-only" aria-labelledby="persona-goal-title">
+      <h2 id="persona-goal-title" class="case-mono case-text-label">His Goal</h2>
+      <div class="case-text-content">
+<p>Work out what he can comfortably put toward the repair and understand the tradeoffs before committing to a plan.</p>
+        <h3 class="case-mono case-data-label">What He Needs</h3>
+        <p>To make that decision with confidence, Santiago needs to understand the recommendation and stay in control of what happens next:</p>
+        <ul>
+          <li>A recommendation grounded in the accounts he chooses to share.</li>
+          <li>Clear calculations and assumptions he can inspect.</li>
+          <li>Control over whether to approve a proposed plan.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- EMPATHY MAPPING / research patterns translated into a fictional scenario. -->
     <section class="case-block case-text-only case-empathy" aria-labelledby="empathy-title">
       <h2 id="empathy-title" class="case-mono case-text-label">Empathy Mapping</h2>
       <div class="case-text-content">
-<p>To ground Compass in real user needs, research was synthesized into a comprehensive Empathy Map representing young banking users (ages 18–24), and Santiago, our persona.</p>
+        <p>I used the survey patterns to explore Santiago’s situation and identify questions to carry into the prototype.</p>
+        <p class="case-note empathy-scenario-note">His thoughts and circumstances are scenario assumptions, not direct participant quotes.</p>
 
-        <p class="empathy-body-heading">What They Hear &amp; See</p>
-        <ul>
-          <li><strong>The Noise:</strong> Friends practicing "loud budgeting," social media "flex culture" driving money dysmorphia, and constant news on inflation.</li>
-          <li><strong>The Signal:</strong> Promotional bank ads that trigger corporate skepticism, counterbalanced by creators advising against Buy Now, Pay Later (BNPL) debt traps.</li>
-          <li><strong>The Reality:</strong> Fluctuating account balances, rising prices at checkout, and friends opting for low-cost social alternatives.</li>
+        <ul class="empathy-summary-list">
+          <li><strong>What he does:</strong> Checks balances periodically and manages spending across more than one account.</li>
+          <li><strong>What he needs to understand:</strong> How a repair plan affects bills, available money, and future commitments.</li>
+          <li><strong>What he needs to control:</strong> Which accounts inform the answer and whether to approve a proposal.</li>
         </ul>
 
-        <p class="empathy-body-heading">What They Say &amp; Do</p>
-        <ul>
-          <li><strong>Behavior:</strong> Checks balances periodically rather than maintaining complex spreadsheets; relies on "little treats" (e.g., daily coffee) to cope with stress, followed by weekly guilt.</li>
-          <li><strong>Workarounds:</strong> Limits social outings ($0 date nights, hosting at home) while managing cash flow across checking accounts, credit cards, and external HYSAs.</li>
-          <li><strong>Stated Intent:</strong> <em>"I want to save $150 for Mom's birthday without risking my bill money."</em></li>
-        </ul>
-
-        <p class="empathy-body-heading">What They Think &amp; Feel</p>
-        <ul>
-          <li><strong>Internal Dialogue:</strong> <em>"Is this bank card recommendation actually good for my financial health, or is it just a corporate sales pitch?"</em></li>
-          <li><strong>Core Friction:</strong> Financial anxiety when opening banking apps, paired with fear/distrust of unmonitored AI making unauthorized money moves.</li>
-          <li><strong>AI Expectations:</strong> Needs to see the exact reasoning (Chain of Thought) and give explicit approval before any transaction occurs.</li>
-        </ul>
         <h3 class="case-mono case-data-label">User Pain Points</h3>
-        <div class="empathy-pain-points">
-          <div class="empathy-pain-point"><p>Disconnected Goal Visibility</p><ul><li>Difficulty seeing how $5 daily purchases impact long-term targets.</li></ul></div>
-          <div class="empathy-pain-point"><p>Evaluation Fatigue</p><ul><li>Overwhelmed by comparing APYs, reward tiers, and complex product menus.</li></ul></div>
-          <div class="empathy-pain-point"><p>Corporate Skepticism &amp; AI Fear</p><ul><li>Distrust of bank upsells and fear of unmonitored automated transfers.</li></ul></div>
-          <div class="empathy-pain-point"><p>Financial Avoidance &amp; Anxiety</p><ul><li>Stress caused by living paycheck-to-paycheck on variable income.</li></ul></div>
-        </div>
-        <h3 class="case-mono case-data-label">HMW Challenges</h3>
-        <p>To bridge the gap between the survey findings and the <strong>Compass</strong> interface, each primary insight was synthesized into a focused design challenge (How Might We) centered around our core user persona, Santiago:</p>
-
-        <p class="empathy-body-heading">Micro-Spending &amp; Daily Impact</p>
-        <ul>
-          <li><strong>Survey Insight:</strong> <strong>50%</strong> of surveyed users report their biggest savings obstacle is seeing how small daily spending impacts long-term targets, while <strong>41%</strong> experience weekly post-purchase guilt.</li>
-          <li><strong>How Might We:</strong> How might we help Santiago visualize how small daily purchases affect his short-term savings milestones (e.g., saving $150 for Mom's birthday) without inducing post-purchase guilt or financial anxiety?</li>
+        <p>The survey suggested three needs to address through Santiago’s repair scenario:</p>
+        <ul class="case-capabilities">
+          <li>Connecting everyday spending to a savings goal.</li>
+          <li>Understanding financial comparisons without excessive effort.</li>
+          <li>Reviewing a recommendation without handing over control.</li>
         </ul>
 
-        <p class="empathy-body-heading">Neutrality &amp; Institutional Skepticism</p>
-        <ul>
-          <li><strong>Survey Insight:</strong> Young adults are deeply skeptical of bank cross-selling and promotion prompts, assuming institutional recommendations serve corporate profits rather than user health.</li>
-          <li><strong>How Might We:</strong> How might we position Compass as an objective, unbiased financial co-pilot within the Wells Fargo app that fairly recommends external High-Yield Savings Accounts (HYSAs) or competitor credit cards?</li>
-        </ul>
-
-        <p class="empathy-body-heading">Financial Avoidance &amp; Entry Barriers</p>
-        <ul>
-          <li><strong>Survey Insight:</strong> <strong>46%</strong> of Gen Z adults admit to avoiding checking their bank account balances due to stress and uncertainty, despite <strong>81%</strong> stating it is important to be perceived as financially responsible.</li>
-          <li><strong>How Might We:</strong> How might we design a calm, non-intrusive entry point that lowers the barrier to checking balances and transforms financial anxiety into proactive financial control?</li>
-        </ul>
-
-        <p class="empathy-body-heading">AI Governance &amp; Safety Guardrails</p>
-        <ul>
-          <li><strong>Survey Insight:</strong> <strong>0%</strong> of surveyed users want fully autonomous AI moving money on its own, <strong>60%</strong> demand a "Suggest &amp; Confirm" model, and <strong>80%</strong> require step-by-step "Chain of Thought" math explanations before trusting a decision.</li>
-          <li><strong>How Might We:</strong> How might we structure a transparent <em>"Suggest / Confirm / Execute"</em> interaction policy with explicit safety guardrails (e.g., auto-pausing transfers if checking drops below $100) so Santiago feels in complete control?</li>
-        </ul>
-
-        <p class="empathy-body-heading">UI Persistence: Artifact Cards vs. Chat Logs</p>
-        <ul>
-          <li><strong>Survey Insight:</strong> <strong>70%</strong> of surveyed target users prefer complex savings roadmaps and budget plans rendered as <strong>Interactive Artifact Cards</strong> pinned to their dashboard rather than buried in a scrolling chat log.</li>
-          <li><strong>How Might We:</strong> How might we design interactive financial Artifact Cards that graduate out of the chat bubble so Santiago can view, edit, and track his 4-week savings goals directly from his main dashboard?</li>
-        </ul>
-        <!-- Source check: 41%, 46%, and 81% do not appear in the nine supplied
-             survey charts. Add external citations or revise their attribution. -->
-
+        <h3 class="case-mono case-data-label">Design Challenges</h3>
+        <p>I translated those needs into three questions to guide the interface and prototype:</p>
+        <ol class="research-design-questions">
+          <li>How might we help Santiago understand what he can put toward a repair while keeping money available for bills?</li>
+          <li>How might we make a recommendation’s calculations, assumptions, and account sources easy to inspect?</li>
+          <li>How might we help him review and approve a plan without confusing approval with a money transfer?</li>
+        </ol>
       </div>
     </section>
 
     <!-- SECTION MARKER: update the next chapter title when ready. -->
-    <div class="case-block-label case-mono case-chapter-marker"><span>Compass / Product overview</span><span>03 / Design System</span></div>
+    <div class="case-block-label case-mono case-chapter-marker"><span>Compass / Product overview</span><span>03 / Design Development</span></div>
 
     <section class="case-block case-text-only" aria-labelledby="task-flow-title">
       <h2 id="task-flow-title" class="case-mono case-text-label">User Task Flow</h2>
       <div class="case-text-content">
-        <p>To establish clear application hierarchy and account for user onboarding edge cases, I mapped the complete decision logic and navigation path for accessing the <strong>Compass Agent</strong> within the banking app:</p>
+        <p>Before designing individual screens, I mapped how someone would reach Compass, what first-time setup would involve, and what should happen if they declined account access.</p>
       </div>
     </section>
 
     <!-- TASK FLOW: cropped from the original diagram. Open for full-size detail. -->
     <figure class="case-block task-flow-image-figure">
-      <a href="assets/compass-task-flow.webp" target="_blank" rel="noopener" aria-label="Open Compass task flow at full size">
-        <img src="assets/compass-task-flow.webp" alt="Compass task flow showing login, password recovery, account navigation, and first-time onboarding with survey and agent permissions." width="1861" height="1081" loading="lazy" decoding="async">
+      <a href="Assets/Compass/compass-task-flow.webp" target="_blank" rel="noopener" aria-label="Open Compass task flow at full size">
+        <img src="Assets/Compass/compass-task-flow.webp" alt="Compass task flow showing login, password recovery, account navigation, and first-time onboarding with survey and agent permissions." width="1861" height="1081" loading="lazy" decoding="async">
       </a>
       <figcaption class="case-mono">Compass access flow / Select the diagram to view it at full size.</figcaption>
     </figure>
 
     <section class="case-block case-text-only" aria-labelledby="architecture-decisions-title">
-      <h2 id="architecture-decisions-title" class="case-mono case-text-label">Key Architectural Decisions</h2>
+      <h2 id="architecture-decisions-title" class="case-mono case-text-label">Key Flow Decisions</h2>
       <div class="case-text-content">
-        <p class="architecture-decision-heading">Low-Friction Onboarding ("First Time User?" Node):</p>
         <ul>
-          <li>If a user is returning, they bypass onboarding and go straight to the Compass Dashboard.</li>
-          <li>If first-time, they pass through a brief User Survey and explicit Permissions Prompt—aligning with our research requirement for transparent user control.</li>
+          <li><strong>Returning users:</strong> Keep repeat visits short by taking them directly to the dashboard.</li>
+          <li><strong>First-time users:</strong> Introduce the setup questions and account permissions before using personal financial context.</li>
+          <li><strong>Declined access:</strong> Provide a route back to standard banking rather than trapping users in onboarding.</li>
         </ul>
-        <p class="architecture-decision-heading">Graceful Permission Handling ("Denied?" Branch):</p>
-        <ul>
-          <li>If the user denies AI permissions, the flow loops safely back without locking them out of standard banking tools.</li>
-          <li>When approved, it unlocks full Compass Dashboard capabilities.</li>
-        </ul>
-        <p class="architecture-decision-heading">Contextual Entry Point ("Need Help" / Dashboard):</p>
-        <ul>
-          <li>Accessing Compass is embedded smoothly into daily banking habits from the main home screen rather than hidden deep in setting sub-menus.</li>
-        </ul>
+        <p class="flow-assumption-note">My initial design placed Compass under Help. Later usability testing challenged that decision: participants struggled to find a planning tool in a location they associated with customer support.</p>
       </div>
     </section>
 
     <section class="case-block case-text-only" aria-labelledby="wireframe-sketches-title">
       <h2 id="wireframe-sketches-title" class="case-mono case-text-label">Wireframe Sketches</h2>
       <div class="case-text-content">
-        <p>Before jumping into high-fidelity Figma components, I sketched rapid layout concepts to test how the <strong>Compass Co-Pilot</strong> could be seamlessly integrated across both the Wells Fargo desktop web portal and mobile banking app.</p>
+        <p>I started with sketches to explore how Compass could fit into the Wells Fargo website and mobile app. The main question was how to keep a conversation, account context, and a proposed plan accessible without crowding the screen.</p>
       </div>
     </section>
 
     <!-- WIREFRAME SLIDESHOW: replace each placeholder with its image.
-         Example: <img src="assets/compass-sketch-01.webp" alt="Describe the wireframe sketches"
+         Example: <img src="Assets/Compass/compass-sketch-01.webp" alt="Describe the wireframe sketches"
                        width="1600" height="1000" loading="lazy" decoding="async">
          Images are contained, not cropped, to preserve sketch annotations. -->
     <figure class="case-block sketch-slideshow">
       <div class="sketch-track" tabindex="0" role="region" aria-label="Wireframe sketches, two-image slideshow">
         <div class="sketch-slide" id="sketch-1" role="group" aria-label="Wireframe sketches, image 1 of 2">
-          <a class="sketch-image-link" href="assets/compass-sketch-01-website.webp" target="_blank" rel="noopener" aria-label="Open website sketches at full size"><img src="assets/compass-sketch-01-website.webp" alt="Website layout concepts showing banking dashboard, onboarding survey, Compass chat, agent actions, and budget visualization." width="2353" height="1131" loading="lazy" decoding="async"></a>
+          <a class="sketch-image-link" href="Assets/Compass/compass-sketch-01-website.webp" target="_blank" rel="noopener" aria-label="Open website sketches at full size"><img src="Assets/Compass/compass-sketch-01-website.webp" alt="Website layout concepts showing banking dashboard, onboarding survey, Compass chat, agent actions, and budget visualization." width="2353" height="1131" loading="lazy" decoding="async"></a>
         </div>
         <div class="sketch-slide" id="sketch-2" role="group" aria-label="Wireframe sketches, image 2 of 2">
-          <a class="sketch-image-link" href="assets/compass-sketch-02-mobile.webp" target="_blank" rel="noopener" aria-label="Open mobile sketches at full size"><img src="assets/compass-sketch-02-mobile.webp" alt="Mobile layout concepts showing account summaries, onboarding survey, Compass chat, and budget visualization." width="1573" height="1539" loading="lazy" decoding="async"></a>
+          <a class="sketch-image-link" href="Assets/Compass/compass-sketch-02-mobile.webp" target="_blank" rel="noopener" aria-label="Open mobile sketches at full size"><img src="Assets/Compass/compass-sketch-02-mobile.webp" alt="Mobile layout concepts showing account summaries, onboarding survey, Compass chat, and budget visualization." width="1573" height="1539" loading="lazy" decoding="async"></a>
         </div>
       </div>
       <nav class="sketch-nav" aria-label="Wireframe image selection"><a href="#sketch-1" aria-label="Show wireframe photo 1" aria-current="true">01</a><a href="#sketch-2" aria-label="Show wireframe photo 2">02</a></nav>
@@ -432,26 +349,26 @@
     <section class="case-block case-text-only" aria-labelledby="exploration-focuses-title">
       <h2 id="exploration-focuses-title" class="case-mono case-text-label">Exploration Focuses</h2>
       <div class="case-text-content">
-        <p class="architecture-decision-heading">Desktop Website Split-Screen Architecture</p>
+        <p class="architecture-decision-heading">Desktop: keeping the conversation and plan together</p>
         <ul>
-          <li><strong>Seamless Web Integration:</strong> Accessible directly via top navigation links (<em>"Help"</em>) that transition the user into the dedicated agent dashboard.</li>
-          <li><strong>Cognitive Load Reduction:</strong> The web dashboard features quick-action suggestion chips above the text box (e.g., <em>Credit, Budget, Save</em>) to minimize typing friction.</li>
-          <li><strong>The Rightmost Visualization Pane:</strong> Unlike the mobile layout, the desktop version leverages a dedicated right-hand column to render live financial visualizations, budget breakdowns, and artifact cards side-by-side with the chat stream.</li>
-          <li><strong>Real-Time Guardrails:</strong> The agent explicitly logs its background steps (<em>“Looking at Account 1 from Sept 1st to 30th”</em>) so the user always knows what data is being queried.</li>
+          <li><strong>Room to compare:</strong> I explored placing the conversation beside a separate panel for financial summaries and proposals. This would let Santiago review a plan without searching through earlier messages.</li>
+          <li><strong>A starting point:</strong> Suggested prompts such as Credit, Budget, and Save gave users examples of what they could ask.</li>
+          <li><strong>Visibility during a request:</strong> I sketched how Compass could show which account and time period it was reviewing, so users could follow the request.</li>
         </ul>
-        <p class="architecture-decision-heading">Mobile Application Layout &amp; State Management</p>
+        <p class="architecture-decision-heading">Mobile: prioritizing one task at a time</p>
         <ul>
-          <li><strong>Entry &amp; Navigation:</strong> Mobile utilizes a bottom fixed menu for quick help triggers, with a hidden sidebar drawer that expands only when needed.</li>
-          <li><strong>Onboarding &amp; Surveys:</strong> First-time users are cleanly routed through a quick goals survey before unlocking the Compass dashboard.</li>
-          <li><strong>Agent Transparency:</strong> Even on mobile, the UI surfaces step-by-step agent actions and account analysis breakdowns (e.g., <em>“Analyzing spending from Sep 1st to Sep 30”</em>) to maintain trust.</li>
+          <li><strong>More space for the conversation:</strong> I explored hiding secondary navigation in a drawer, keeping the main screen focused on the current task.</li>
+          <li><strong>Access to supporting information:</strong> Account details and financial summaries needed to remain reachable without competing with the conversation.</li>
+          <li><strong>A shared interaction model:</strong> Both layouts kept the same intended sequence: ask a question, understand the recommendation, and review a proposal before approving it.</li>
         </ul>
+        <p class="case-note exploration-stage-note">These sketches captured early layout ideas. The grayscale prototype was the next step in exploring how they would work on screen.</p>
       </div>
     </section>
 
     <section class="case-block case-text-only" aria-labelledby="low-fidelity-title">
       <h2 id="low-fidelity-title" class="case-mono case-text-label">Low Fidelity</h2>
       <div class="case-text-content">
-        <p>Before applying color or branding, I prototyped the core layout in grayscale to validate the information hierarchy, onboarding friction points, and split-screen desktop behavior.</p>
+        <p>I translated the sketches into grayscale screens to work through the journey from opening Compass to reviewing a financial proposal. Leaving out color and branding helped me focus on what information belonged together and what users needed at each step.</p>
       </div>
     </section>
 
@@ -459,15 +376,15 @@
          Scroll inside the screen for long pages; use numbers to switch screens. -->
     <figure class="case-block lowfi-viewer">
       <div class="lowfi-track" role="region" aria-label="Nine low-fidelity prototype screens">
-          <div class="lowfi-slide" id="lowfi-1" role="region" aria-label="Low-fidelity screen 1 of 9, scroll vertically to see the full screen" tabindex="0"><img src="assets/compass-lowfi-01.webp" alt="Compass low-fidelity prototype screen 1" width="2000" height="2697" loading="lazy" decoding="async"></div>
-          <div class="lowfi-slide" id="lowfi-2" role="region" aria-label="Low-fidelity screen 2 of 9, scroll vertically to see the full screen" tabindex="0"><img src="assets/compass-lowfi-02.webp" alt="Compass low-fidelity prototype screen 2" width="2000" height="1293" loading="lazy" decoding="async"></div>
-          <div class="lowfi-slide" id="lowfi-3" role="region" aria-label="Low-fidelity screen 3 of 9, scroll vertically to see the full screen" tabindex="0"><img src="assets/compass-lowfi-03.webp" alt="Compass low-fidelity prototype screen 3" width="2000" height="1293" loading="lazy" decoding="async"></div>
-          <div class="lowfi-slide" id="lowfi-4" role="region" aria-label="Low-fidelity screen 4 of 9, scroll vertically to see the full screen" tabindex="0"><img src="assets/compass-lowfi-07.webp" alt="Compass low-fidelity prototype screen 4" width="2000" height="4347" loading="lazy" decoding="async"></div>
-          <div class="lowfi-slide" id="lowfi-5" role="region" aria-label="Low-fidelity screen 5 of 9, scroll vertically to see the full screen" tabindex="0"><img src="assets/compass-lowfi-09.webp" alt="Compass low-fidelity prototype screen 5" width="2000" height="1293" loading="lazy" decoding="async"></div>
-          <div class="lowfi-slide" id="lowfi-6" role="region" aria-label="Low-fidelity screen 6 of 9, scroll vertically to see the full screen" tabindex="0"><img src="assets/compass-lowfi-04.webp" alt="Compass low-fidelity prototype screen 6" width="2000" height="1293" loading="lazy" decoding="async"></div>
-          <div class="lowfi-slide" id="lowfi-7" role="region" aria-label="Low-fidelity screen 7 of 9, scroll vertically to see the full screen" tabindex="0"><img src="assets/compass-lowfi-08.webp" alt="Compass low-fidelity prototype screen 7" width="2000" height="1293" loading="lazy" decoding="async"></div>
-          <div class="lowfi-slide" id="lowfi-8" role="region" aria-label="Low-fidelity screen 8 of 9, scroll vertically to see the full screen" tabindex="0"><img src="assets/compass-lowfi-05.webp" alt="Compass low-fidelity prototype screen 8" width="2000" height="1293" loading="lazy" decoding="async"></div>
-          <div class="lowfi-slide" id="lowfi-9" role="region" aria-label="Low-fidelity screen 9 of 9, scroll vertically to see the full screen" tabindex="0"><img src="assets/compass-lowfi-06.webp" alt="Compass low-fidelity prototype screen 9" width="2000" height="1293" loading="lazy" decoding="async"></div>
+          <div class="lowfi-slide" id="lowfi-1" role="region" aria-label="Low-fidelity screen 1 of 9, scroll vertically to see the full screen" tabindex="0"><img src="Assets/Compass/compass-lowfi-01.webp" alt="Compass low-fidelity prototype screen 1" width="2000" height="2697" loading="lazy" decoding="async"></div>
+          <div class="lowfi-slide" id="lowfi-2" role="region" aria-label="Low-fidelity screen 2 of 9, scroll vertically to see the full screen" tabindex="0"><img src="Assets/Compass/compass-lowfi-02.webp" alt="Compass low-fidelity prototype screen 2" width="2000" height="1293" loading="lazy" decoding="async"></div>
+          <div class="lowfi-slide" id="lowfi-3" role="region" aria-label="Low-fidelity screen 3 of 9, scroll vertically to see the full screen" tabindex="0"><img src="Assets/Compass/compass-lowfi-03.webp" alt="Compass low-fidelity prototype screen 3" width="2000" height="1293" loading="lazy" decoding="async"></div>
+          <div class="lowfi-slide" id="lowfi-4" role="region" aria-label="Low-fidelity screen 4 of 9, scroll vertically to see the full screen" tabindex="0"><img src="Assets/Compass/compass-lowfi-07.webp" alt="Compass low-fidelity prototype screen 4" width="2000" height="4347" loading="lazy" decoding="async"></div>
+          <div class="lowfi-slide" id="lowfi-5" role="region" aria-label="Low-fidelity screen 5 of 9, scroll vertically to see the full screen" tabindex="0"><img src="Assets/Compass/compass-lowfi-09.webp" alt="Compass low-fidelity prototype screen 5" width="2000" height="1293" loading="lazy" decoding="async"></div>
+          <div class="lowfi-slide" id="lowfi-6" role="region" aria-label="Low-fidelity screen 6 of 9, scroll vertically to see the full screen" tabindex="0"><img src="Assets/Compass/compass-lowfi-04.webp" alt="Compass low-fidelity prototype screen 6" width="2000" height="1293" loading="lazy" decoding="async"></div>
+          <div class="lowfi-slide" id="lowfi-7" role="region" aria-label="Low-fidelity screen 7 of 9, scroll vertically to see the full screen" tabindex="0"><img src="Assets/Compass/compass-lowfi-08.webp" alt="Compass low-fidelity prototype screen 7" width="2000" height="1293" loading="lazy" decoding="async"></div>
+          <div class="lowfi-slide" id="lowfi-8" role="region" aria-label="Low-fidelity screen 8 of 9, scroll vertically to see the full screen" tabindex="0"><img src="Assets/Compass/compass-lowfi-05.webp" alt="Compass low-fidelity prototype screen 8" width="2000" height="1293" loading="lazy" decoding="async"></div>
+          <div class="lowfi-slide" id="lowfi-9" role="region" aria-label="Low-fidelity screen 9 of 9, scroll vertically to see the full screen" tabindex="0"><img src="Assets/Compass/compass-lowfi-06.webp" alt="Compass low-fidelity prototype screen 9" width="2000" height="1293" loading="lazy" decoding="async"></div>
       </div>
       <nav class="lowfi-nav" aria-label="Low-fidelity screen selection"><button type="button" data-lowfi="0" aria-label="Show low-fidelity screen 1" aria-current="true">01</button><button type="button" data-lowfi="1" aria-label="Show low-fidelity screen 2">02</button><button type="button" data-lowfi="2" aria-label="Show low-fidelity screen 3">03</button><button type="button" data-lowfi="3" aria-label="Show low-fidelity screen 4">04</button><button type="button" data-lowfi="4" aria-label="Show low-fidelity screen 5">05</button><button type="button" data-lowfi="5" aria-label="Show low-fidelity screen 6">06</button><button type="button" data-lowfi="6" aria-label="Show low-fidelity screen 7">07</button><button type="button" data-lowfi="7" aria-label="Show low-fidelity screen 8">08</button><button type="button" data-lowfi="8" aria-label="Show low-fidelity screen 9">09</button></nav>
       <figcaption class="case-mono">Low-fidelity prototype / Select a screen, then scroll inside it to explore the full page.</figcaption>
@@ -476,29 +393,30 @@
     <section class="case-block case-text-only" aria-labelledby="interface-architecture-title">
       <h2 id="interface-architecture-title" class="case-mono case-text-label">Interface Architecture</h2>
       <div class="case-text-content">
-        <p class="architecture-decision-heading">Core Dashboard &amp; Agent Discovery</p>
+        <p class="architecture-decision-heading">Giving Compass a place within everyday banking</p>
         <ul>
-          <li><strong>Wells Fargo Integration:</strong> The base interface maintains familiar Wells Fargo dashboard styling (Checking, Savings, Visa accounts, and FICO score tracking).</li>
-          <li><strong>Dual Agent Entry:</strong> Clear separation between <strong>Fargo</strong> (reactive chat for quick balance checks) and <strong>Compass</strong> (proactive co-pilot for budgeting, savings, and credit optimization).</li>
+          <li><strong>A familiar starting point:</strong> I kept the account overview as the entry to the experience, then explored how users would discover Compass alongside Fargo.</li>
+          <li><strong>Different purposes:</strong> Fargo handled quick banking questions, while Compass focused on working through a financial goal. The early design introduced both tools before users entered the conversation.</li>
         </ul>
-        <p class="architecture-decision-heading">Onboarding Questionnaire &amp; Permission Control</p>
+        <p class="architecture-decision-heading">Establishing context before offering guidance</p>
         <ul>
-          <li><strong>Contextual Setup:</strong> A 3–5 minute onboarding questionnaire tailored to age group and financial focus.</li>
-          <li><strong>Granular Privacy &amp; Governance:</strong> Explicitly asks users which accounts Compass can view and how it handles transfers—reinforcing the research-backed <strong>"Suggest &amp; Confirm"</strong> model over full automation.</li>
+          <li><strong>First-time setup:</strong> The onboarding screens introduced questions about the user’s financial situation and goals.</li>
+          <li><strong>Account selection:</strong> Users could choose which accounts Compass could reference. This made the intended data boundaries part of the experience rather than an invisible assumption.</li>
         </ul>
-        <p class="architecture-decision-heading">Split-Screen Co-Pilot &amp; "Chain of Thought" Visualization</p>
+        <p class="architecture-decision-heading">Separating a conversation from a proposed plan</p>
         <ul>
-          <li><strong>The Desktop Split-Screen:</strong> The interface utilizes a left-hand chat stream and a dedicated right-hand visualization pane.</li>
-          <li><strong>Transparent Math ("Thoughts" Drawer):</strong> When prompted (e.g., <em>"How much can I put aside for a $500 car repair fund?"</em>), Compass explicitly breaks down account scans, income averages, bill commitments, and discretionary cash flow floors in a readable math trace.</li>
-          <li><strong>Interactive Artifact Generation:</strong> The calculated plan graduates into a structured <strong>Savings Artifact Card</strong> on the right, featuring explicit safety nets (e.g., <em>Stop transfers if checking drops below $300</em>) and clear action buttons (<em>Approve Plan</em> vs. <em>Edit Plan</em>).</li>
+          <li><strong>Ask and clarify:</strong> The conversation gave Santiago space to describe his repair goal and provide the context needed for a recommendation.</li>
+          <li><strong>Inspect the calculations:</strong> An expandable breakdown offered a place to review the amounts and assumptions behind the suggested plan.</li>
+          <li><strong>Review a proposal:</strong> A separate panel kept the plan visible beside the conversation, with controls to approve or revise it.</li>
         </ul>
+        <p class="case-note exploration-stage-note">This stage established the screen structure and intended interaction sequence. The later working prototype let me investigate how those interactions behaved with generated responses and synthetic account data.</p>
       </div>
     </section>
 
     <section class="case-block case-text-only" aria-labelledby="high-fidelity-title">
       <h2 id="high-fidelity-title" class="case-mono case-text-label">High Fidelity</h2>
       <div class="case-text-content">
-        <p>The final UI brings the core research insights to life within the official <strong>Wells Fargo</strong> web ecosystem, utilizing a structured split-screen desktop layout that balances conversational prompts with persistent financial artifacts.</p>
+        <p>With the screen structure in place, I brought the interface into the visual language of Wells Fargo’s website. I used familiar account cards, navigation, and colors to make Compass feel connected to the banking experience, while giving the conversation and proposed plan distinct spaces.</p>
       </div>
     </section>
 
@@ -506,17 +424,17 @@
          Shared viewer styles match Low Fidelity; controls are independent. -->
     <figure class="case-block lowfi-viewer highfi-viewer">
       <div class="lowfi-track highfi-track" role="region" aria-label="Eleven high-fidelity prototype screens">
-        <div class="lowfi-slide" id="highfi-1" role="region" aria-label="High-fidelity screen 1 of 11, scroll vertically for the full screen" tabindex="0"><img src="assets/compass-highfi-01.webp" alt="Compass high-fidelity prototype screen 1" width="2000" height="2473" loading="lazy" decoding="async"></div>
-        <div class="lowfi-slide" id="highfi-2" role="region" aria-label="High-fidelity screen 2 of 11, scroll vertically for the full screen" tabindex="0"><img src="assets/compass-highfi-02.webp" alt="Compass high-fidelity prototype screen 2" width="2000" height="1293" loading="lazy" decoding="async"></div>
-        <div class="lowfi-slide" id="highfi-3" role="region" aria-label="High-fidelity screen 3 of 11, scroll vertically for the full screen" tabindex="0"><img src="assets/compass-highfi-03.webp" alt="Compass high-fidelity prototype screen 3" width="2000" height="1293" loading="lazy" decoding="async"></div>
-        <div class="lowfi-slide" id="highfi-4" role="region" aria-label="High-fidelity screen 4 of 11, scroll vertically for the full screen" tabindex="0"><img src="assets/compass-highfi-11.webp" alt="Compass high-fidelity prototype screen 4" width="2000" height="3935" loading="lazy" decoding="async"></div>
-        <div class="lowfi-slide" id="highfi-5" role="region" aria-label="High-fidelity screen 5 of 11, scroll vertically for the full screen" tabindex="0"><img src="assets/compass-highfi-04.webp" alt="Compass high-fidelity prototype screen 5" width="2000" height="1293" loading="lazy" decoding="async"></div>
-        <div class="lowfi-slide" id="highfi-6" role="region" aria-label="High-fidelity screen 6 of 11, scroll vertically for the full screen" tabindex="0"><img src="assets/compass-highfi-05.webp" alt="Compass high-fidelity prototype screen 6" width="2000" height="1293" loading="lazy" decoding="async"></div>
-        <div class="lowfi-slide" id="highfi-7" role="region" aria-label="High-fidelity screen 7 of 11, scroll vertically for the full screen" tabindex="0"><img src="assets/compass-highfi-06.webp" alt="Compass high-fidelity prototype screen 7" width="2000" height="1293" loading="lazy" decoding="async"></div>
-        <div class="lowfi-slide" id="highfi-8" role="region" aria-label="High-fidelity screen 8 of 11, scroll vertically for the full screen" tabindex="0"><img src="assets/compass-highfi-07.webp" alt="Compass high-fidelity prototype screen 8" width="2000" height="1293" loading="lazy" decoding="async"></div>
-        <div class="lowfi-slide" id="highfi-9" role="region" aria-label="High-fidelity screen 9 of 11, scroll vertically for the full screen" tabindex="0"><img src="assets/compass-highfi-08.webp" alt="Compass high-fidelity prototype screen 9" width="2000" height="1293" loading="lazy" decoding="async"></div>
-        <div class="lowfi-slide" id="highfi-10" role="region" aria-label="High-fidelity screen 10 of 11, scroll vertically for the full screen" tabindex="0"><img src="assets/compass-highfi-09.webp" alt="Compass high-fidelity prototype screen 10" width="2000" height="1293" loading="lazy" decoding="async"></div>
-        <div class="lowfi-slide" id="highfi-11" role="region" aria-label="High-fidelity screen 11 of 11, scroll vertically for the full screen" tabindex="0"><img src="assets/compass-highfi-10.webp" alt="Compass high-fidelity prototype screen 11" width="2000" height="1293" loading="lazy" decoding="async"></div>
+        <div class="lowfi-slide" id="highfi-1" role="region" aria-label="High-fidelity screen 1 of 11, scroll vertically for the full screen" tabindex="0"><img src="Assets/Compass/compass-highfi-01.webp" alt="Compass high-fidelity prototype screen 1" width="2000" height="2473" loading="lazy" decoding="async"></div>
+        <div class="lowfi-slide" id="highfi-2" role="region" aria-label="High-fidelity screen 2 of 11, scroll vertically for the full screen" tabindex="0"><img src="Assets/Compass/compass-highfi-02.webp" alt="Compass high-fidelity prototype screen 2" width="2000" height="1293" loading="lazy" decoding="async"></div>
+        <div class="lowfi-slide" id="highfi-3" role="region" aria-label="High-fidelity screen 3 of 11, scroll vertically for the full screen" tabindex="0"><img src="Assets/Compass/compass-highfi-03.webp" alt="Compass high-fidelity prototype screen 3" width="2000" height="1293" loading="lazy" decoding="async"></div>
+        <div class="lowfi-slide" id="highfi-4" role="region" aria-label="High-fidelity screen 4 of 11, scroll vertically for the full screen" tabindex="0"><img src="Assets/Compass/compass-highfi-11.webp" alt="Compass high-fidelity prototype screen 4" width="2000" height="3935" loading="lazy" decoding="async"></div>
+        <div class="lowfi-slide" id="highfi-5" role="region" aria-label="High-fidelity screen 5 of 11, scroll vertically for the full screen" tabindex="0"><img src="Assets/Compass/compass-highfi-04.webp" alt="Compass high-fidelity prototype screen 5" width="2000" height="1293" loading="lazy" decoding="async"></div>
+        <div class="lowfi-slide" id="highfi-6" role="region" aria-label="High-fidelity screen 6 of 11, scroll vertically for the full screen" tabindex="0"><img src="Assets/Compass/compass-highfi-05.webp" alt="Compass high-fidelity prototype screen 6" width="2000" height="1293" loading="lazy" decoding="async"></div>
+        <div class="lowfi-slide" id="highfi-7" role="region" aria-label="High-fidelity screen 7 of 11, scroll vertically for the full screen" tabindex="0"><img src="Assets/Compass/compass-highfi-06.webp" alt="Compass high-fidelity prototype screen 7" width="2000" height="1293" loading="lazy" decoding="async"></div>
+        <div class="lowfi-slide" id="highfi-8" role="region" aria-label="High-fidelity screen 8 of 11, scroll vertically for the full screen" tabindex="0"><img src="Assets/Compass/compass-highfi-07.webp" alt="Compass high-fidelity prototype screen 8" width="2000" height="1293" loading="lazy" decoding="async"></div>
+        <div class="lowfi-slide" id="highfi-9" role="region" aria-label="High-fidelity screen 9 of 11, scroll vertically for the full screen" tabindex="0"><img src="Assets/Compass/compass-highfi-08.webp" alt="Compass high-fidelity prototype screen 9" width="2000" height="1293" loading="lazy" decoding="async"></div>
+        <div class="lowfi-slide" id="highfi-10" role="region" aria-label="High-fidelity screen 10 of 11, scroll vertically for the full screen" tabindex="0"><img src="Assets/Compass/compass-highfi-09.webp" alt="Compass high-fidelity prototype screen 10" width="2000" height="1293" loading="lazy" decoding="async"></div>
+        <div class="lowfi-slide" id="highfi-11" role="region" aria-label="High-fidelity screen 11 of 11, scroll vertically for the full screen" tabindex="0"><img src="Assets/Compass/compass-highfi-10.webp" alt="Compass high-fidelity prototype screen 11" width="2000" height="1293" loading="lazy" decoding="async"></div>
       </div>
       <nav class="lowfi-nav" aria-label="High-fidelity screen selection"><button type="button" data-highfi="0" aria-label="Show high-fidelity screen 1" aria-current="true">01</button><button type="button" data-highfi="1" aria-label="Show high-fidelity screen 2">02</button><button type="button" data-highfi="2" aria-label="Show high-fidelity screen 3">03</button><button type="button" data-highfi="3" aria-label="Show high-fidelity screen 4">04</button><button type="button" data-highfi="4" aria-label="Show high-fidelity screen 5">05</button><button type="button" data-highfi="5" aria-label="Show high-fidelity screen 6">06</button><button type="button" data-highfi="6" aria-label="Show high-fidelity screen 7">07</button><button type="button" data-highfi="7" aria-label="Show high-fidelity screen 8">08</button><button type="button" data-highfi="8" aria-label="Show high-fidelity screen 9">09</button><button type="button" data-highfi="9" aria-label="Show high-fidelity screen 10">10</button><button type="button" data-highfi="10" aria-label="Show high-fidelity screen 11">11</button></nav>
       <figcaption class="case-mono">High-fidelity prototype / Select a screen, then scroll inside it to explore the full page.</figcaption>
@@ -525,21 +443,22 @@
     <section class="case-block case-text-only" aria-labelledby="user-interface-title">
       <h2 id="user-interface-title" class="case-mono case-text-label">User Interface</h2>
       <div class="case-text-content">
-        <p class="architecture-decision-heading">Onboarding &amp; Account Personalization</p>
+        <p class="architecture-decision-heading">Helping users start a conversation</p>
         <ul>
-          <li><strong>Contextual Setup:</strong> Upon entering Compass, first-time users complete a brief 3–5 minute onboarding questionnaire tailored to student/part-time income fluctuations and financial stress points.</li>
-          <li><strong>Explicit Permissions:</strong> Users define account access boundaries (e.g., Everyday Checking <code>...0927</code>, Savings <code>...6543</code>, Visa <code>...4603</code>) and select their preferred governance model (<em>Suggest &amp; Confirm</em>), eliminating corporate skepticism and ensuring total user autonomy.</li>
+          <li><strong>A familiar entry:</strong> Users begin with their account overview and can access Compass for help working through a financial goal.</li>
+          <li><strong>Suggested questions:</strong> Prompts such as Calculate Safe-to-Spend, Create Savings Goal, and Upcoming Payments offer starting points for users who may not know what to ask.</li>
+          <li><strong>Relevant account context:</strong> Account selection makes it visible which information Compass can use when responding.</li>
         </ul>
-        <p class="architecture-decision-heading">The Dashboard &amp; Proactive Co-Pilot Entry</p>
+        <p class="architecture-decision-heading">Making a recommendation easier to inspect</p>
         <ul>
-          <li><strong>Dual-Agent Architecture:</strong> Users can seamlessly transition between <strong>Fargo</strong> (a reactive chatbot for quick balance checks and bill pay) and <strong>Compass</strong> (a proactive financial co-pilot for budgeting, micro-savings, and credit optimization).</li>
-          <li><strong>Zero Cognitive Load:</strong> Quick-action chips (<em>Calculate Safe-to-Spend</em>, <em>Create Savings Goal</em>, <em>Upcoming Payments</em>) sit directly above the input box to guide user interactions without cluttering the interface.</li>
+          <li><strong>Conversation first:</strong> Santiago can describe his car repair goal and ask follow-up questions before requesting a proposal.</li>
+          <li><strong>Calculations on demand:</strong> The expandable “Thoughts” drawer provides a place to inspect the amounts and assumptions behind the recommendation without filling the main conversation with every detail.</li>
+          <li><strong>A plan that stays visible:</strong> The proposal appears in a separate panel beside the chat, so users can review it without searching through earlier messages.</li>
         </ul>
-        <p class="architecture-decision-heading">"Chain of Thought" Math Transparency &amp; Artifact Generation</p>
+        <p class="architecture-decision-heading">Making the approval step explicit</p>
         <ul>
-          <li><strong>Transparent Reasoning ("Thoughts" Drawer):</strong> When Santiago asks to save for a $500 Car Repair Fund, Compass opens an inspectable math breakdown—analyzing 60-day cash flow, monthly income ($1,850), scheduled bills ($1,220), and a $100 safety floor to calculate a safe $45/week transfer target.</li>
-          <li><strong>Interactive Budget Artifact Cards:</strong> Rather than burying the plan in a scrolling chat log, the system renders a persistent <strong>Budget Proposal card</strong> on the right side of the screen.</li>
-          <li><strong>Human-in-the-Loop Safeguards:</strong> The artifact explicitly outlines safety nets (e.g., <em>Stop transfers if Everyday Checking drops below $1,120</em>) and requires a manual tap on <strong>Approve</strong> or <strong>Decline</strong> before any financial action is executed.</li>
+          <li><strong>A distinct decision point:</strong> Approve and Decline controls separate reviewing a proposal from agreeing to it.</li>
+          <li><strong>Visible conditions:</strong> The proposal includes the suggested savings amount and balance conditions, giving users specific details to examine before deciding.</li>
         </ul>
       </div>
     </section>
@@ -548,62 +467,54 @@
     <div class="case-block-label case-mono case-chapter-marker"><span>Compass / Product overview</span><span>04 / Technical Implementation</span></div>
 
     <section class="case-block case-text-only" aria-labelledby="technical-implementation-title">
-      <h2 id="technical-implementation-title" class="case-mono case-text-label">Compass Technical Implementation</h2>
+      <h2 id="technical-implementation-title" class="case-mono case-text-label">Building a Working Prototype</h2>
       <div class="case-text-content">
-        <p>To move beyond static Figma prototypes and evaluate how an AI co-pilot handles real-world constraints, I engineered a functional web prototype powered by the <strong>OpenAI API</strong>, local Python execution scripts, and synthetic persona data.</p>
-        <p class="architecture-decision-heading">Code Generation &amp; Layout Optimization</p>
+        <p>Static screens showed how Compass should look, but they couldn’t show how it would respond when someone asked an unexpected question. I used Codex to help build a working web prototype, then explored its responses using Santiago’s synthetic financial data.</p>
+        <p class="implementation-role">My role was to define the interaction, review the generated implementation, and refine the experience when the agent’s answers or the interface fell short.</p>
+        <p class="architecture-decision-heading">Translating the design into an interactive experience</p>
         <ul>
-          <li><strong>Figma-to-Code Translation:</strong> Generated the base HTML/CSS/JS web architecture directly from Figma auto-layout frames using plugin tooling in Codex.</li>
-          <li><strong>Prompt:</strong> <q>I am building a responsive website redesign for Wells Fargo. Please use @FIGMA and implement this design.</q></li>
-          <li><strong>Layout Integrity:</strong> Once Codex built the site, I began resolving grid misalignment bugs, repairing broken spacing tokens, and enforcing consistent alignment across the split-screen desktop viewport by communicating with Codex as it adjusted the code.</li>
-        </ul>
-        <p class="architecture-decision-heading">API Integration &amp; Environment Setup</p>
-        <ul>
-          <li><strong>Local Server &amp; Scripting:</strong> Once the layout was as desired, I asked Codex to build a local Python agent named Compass to handle state management, user session inputs, and request handling, with the goal of specializing in personal finance.</li>
-          <li><strong>Credential Security:</strong> Alongside this, I asked Codex to create a local <code>.env</code> file to store the OpenAI API key used to authenticate the agent's requests.</li>
-          <li><strong>Prompt:</strong> <q>Implement an agent in Python called Compass that is an expert financial advisor. The agent belongs in the "Screen - Agent Dashboard Collapsed" frame and should function similarly to popular LLM dashboards. I will provide you with an OpenAI API key for the agent, so provide me with a .env file where I can paste the API key.</q></li>
-          <li><strong>Key Placement:</strong> Once Codex created the <code>.env</code> file, I opened Phoenix Code to paste the OpenAI API key, enabling the agent's financial-advisor functionality.</li>
+          <li><strong>Starting from Figma:</strong> I used Codex and Figma tooling to generate the initial web interface from my designs.</li>
+          <li><strong>Reviewing the result:</strong> I checked the generated screens against the intended layout and directed adjustments to spacing, alignment, and the split-screen arrangement.</li>
+          <li><strong>Connecting the conversation:</strong> With Codex’s assistance, I connected the interface to a local Python agent using the OpenAI API. This let me explore questions and follow-up responses beyond a fixed prototype path.</li>
         </ul>
       </div>
     </section>
 
     <!-- TECHNICAL IMPLEMENTATION IMAGE / cropped Phoenix Code editor. -->
     <figure class="case-block implementation-image">
-      <img src="assets/compass-phoenix-env.webp" alt="Phoenix Code environment example showing an empty OPENAI_API_KEY field and the OPENAI_MODEL setting." width="1288" height="235" loading="lazy" decoding="async">
-      <figcaption class="case-mono">Phoenix Code / Local environment configuration example.</figcaption>
+      <img src="Assets/Compass/compass-phoenix-env.webp" alt="Phoenix Code environment example showing an empty OPENAI_API_KEY field and the OPENAI_MODEL setting." width="1288" height="235" loading="lazy" decoding="async">
+      <figcaption class="case-mono">Local environment configuration for the working prototype.</figcaption>
     </figure>
 
     <!-- TEXT + IMAGE: edit the heading, paragraphs, and media filename below. -->
     <section class="case-block case-split case-agent-behavior" aria-labelledby="implementation-detail-title">
       <div class="case-block-copy">
         <h2 id="implementation-detail-title">AGENT BEHAVIOR</h2>
-        <p>System Prompt Refactoring &amp; Guardrail Engineering</p>
+        <p>The early instructions combined my input with Codex-generated wording. During testing, I noticed that Compass responded as though it could act on real accounts. Its instructions described account access and transfers without clearly defining the limits of the prototype.</p>
+        <p>I revised the instructions to distinguish the synthetic account information Compass could reference from actions it could not perform.</p>
         <ul>
-          <li><strong>Overcoming Passive Advice:</strong> On initial testing, the default system instructions produced overly passive, generic responses (e.g., standard boilerplate financial tips).</li>
-          <li><strong>Engineering Directives:</strong> I redesigned the system prompt to enforce strict operational behavior: <strong>Suggest &amp; Confirm</strong> governance, mandatory <strong>Chain of Thought</strong> math steps in the "Thoughts" drawer, and automatic formatting into Artifact Cards, while keeping the agent within its intended scope.</li>
+          <li><strong>Ground answers in available information:</strong> Ask for missing details rather than inventing balances, transactions, or financial terms.</li>
+          <li><strong>Make recommendations inspectable:</strong> Explain the calculations and assumptions behind a suggested plan.</li>
+          <li><strong>State the limits:</strong> Do not imply live bank access, completed transfers, scheduled payments, or verified market rates.</li>
         </ul>
-        <h3 class="agent-prompt-heading">Prompt Reconstruction</h3>
-        <ul>
-          <li><strong>Original Prompt:</strong> You are Compass, a helpful personal finance education assistant in an independent prototype, not Wells Fargo. Be concise, warm, and practical. You can access accounts, transfer funds, or verify current rates; this includes any credit cards in the account. Never invent balances or transactions. Ask for missing amounts before calculating. Explain assumptions. Do not request credentials, account numbers, or identifying information. Use plain text with short paragraphs and simple bullets. Give educational explanations, not personalized investment, legal, or tax advice. Always ask for approvals for any changes.</li>
-          <li><strong>Reconstructed Prompt:</strong> You are Compass, a knowledgeable and approachable financial guidance assistant. You will help with budgeting, savings, debt, credit, and financial literacy. Give clear, practical answers with explicit assumptions and checkable calculations. Ask for missing information instead of inventing income, bills, transactions, rates, or risk tolerance. You are an AI, not a licensed advisor or Wells Fargo employee. Never imply live bank access, executed transfers, scheduled payments, or verified market data.</li>
-        </ul>
+        <p>The intended interaction remained useful without pretending to execute banking actions: Compass could discuss a goal and help prepare a proposal for the user to review.</p>
       </div>
       <figure class="case-figure case-landscape-figure">
-        <a class="agent-code-image" href="assets/compass-agent-instructions.webp" target="_blank" rel="noopener" aria-label="View Compass system instructions at full size"><img src="assets/compass-agent-instructions.webp" alt="Compass system instructions specifying clear assumptions, checkable calculations, requests for missing information, and limits on banking access and financial actions." width="1345" height="265" loading="lazy" decoding="async"></a>
-        <figcaption class="case-mono">Compass system instructions / Select to view at full size.</figcaption>
+        <a class="agent-code-image" href="Assets/Compass/compass-agent-instructions.webp" target="_blank" rel="noopener" aria-label="View Compass system instructions at full size"><img src="Assets/Compass/compass-agent-instructions.webp" alt="Compass system instructions specifying clear assumptions, checkable calculations, requests for missing information, and limits on banking access and financial actions." width="1345" height="265" loading="lazy" decoding="async"></a>
+        <figcaption class="case-mono">Revised instructions clarifying the agent’s role, data limits, and unsupported actions. Select to view at full size.</figcaption>
       </figure>
 
       <!-- Continuing Agent Behavior: subsection, not a new chapter. -->
       <div class="case-block-copy agent-grounding-copy">
-        <h3 class="agent-prompt-heading">Grounding Data: Santiago’s 3-Month Synthetic Ledger</h3>
+        <p>Compass needed more than a starting balance to respond to Santiago’s repair question. I created a three-month synthetic ledger to give the prototype a consistent financial scenario to work with.</p>
         <ul>
-          <li><strong>The Cold Start Problem:</strong> The agent initially lacked personal context to make specific calculations.</li>
-          <li><strong>Building the Transaction Dataset:</strong> Created a detailed 3-month financial spreadsheet (Jan 2026 – Mar 2026) modeling Santiago’s real-world cash flow across both checking and credit card accounts.</li>
-          <li><strong>Forecast Rules &amp; Context Mapping:</strong> Configured logic via Codex so Compass treats live dashboard figures as <em>current balances</em> while referencing historical recurring earnings and spending patterns to build future savings roadmaps.</li>
+          <li><strong>A realistic testing context:</strong> The spreadsheet covered January through March 2026, with income, everyday expenses, and transactions across checking and credit card accounts.</li>
+          <li><strong>History and current balances:</strong> I used Codex to help configure how Compass referenced transaction history alongside the balances displayed in the prototype. Past earnings and spending provided context for discussing what Santiago might set aside.</li>
+          <li><strong>A consistent basis for iteration:</strong> Using the same fictional data let me explore different questions without connecting real bank accounts.</li>
         </ul>
       </div>
       <figure class="case-figure agent-ledger-figure">
-        <a class="agent-code-image" href="assets/compass-synthetic-ledger.webp" target="_blank" rel="noopener" aria-label="View Santiago’s synthetic transaction ledger at full size"><img src="assets/compass-synthetic-ledger.webp" alt="Synthetic transaction ledger showing dates, categories, checking and credit-card activity, amounts, transfer IDs, and cash-flow notes." width="2800" height="1204" loading="lazy" decoding="async"></a>
+        <a class="agent-code-image" href="Assets/Compass/compass-synthetic-ledger.webp" target="_blank" rel="noopener" aria-label="View Santiago’s synthetic transaction ledger at full size"><img src="Assets/Compass/compass-synthetic-ledger.webp" alt="Synthetic transaction ledger showing dates, categories, checking and credit-card activity, amounts, transfer IDs, and cash-flow notes." width="2800" height="1204" loading="lazy" decoding="async"></a>
         <figcaption class="case-mono">Santiago’s synthetic ledger / January–March 2026. Select to view at full size.</figcaption>
       </figure>
 
@@ -613,17 +524,18 @@
     <section class="case-block case-split case-agent-behavior case-agent-rules" aria-labelledby="agent-rules-title">
       <div class="case-block-copy agent-grounding-copy">
         <h2 id="agent-rules-title" class="case-mono case-text-label">Agent Rules</h2>
-        <p>To ensure Compass operated within strict governance bounds, I established a dedicated rules configuration file (<code>rules.md</code>) inside Phoenix Code. This file served as the operational system prompt loaded directly into the AI agent, dictating data access, financial logic, and user permissions.</p>
-        <h3 class="agent-prompt-heading">Technical Value of the <code>rules.md</code> File</h3>
+        <p>I collected the agent’s operating instructions in a <code>rules.md</code> file inside Phoenix Code. This gave me one place to refine how Compass should use account information, explain spending, and respond when someone requested a plan.</p>
+        <p>The instructions addressed four recurring concerns:</p>
         <ul>
-          <li><strong>Granular Permission Controls:</strong> Enforces strict boundary checks. If a user does not grant access to <code>Visa...4603</code>, the agent completely excludes those records rather than defaulting to zero.</li>
-          <li><strong>Double-Counting Avoidance:</strong> Solves a major financial AI bug—explicitly preventing credit card repayments from being counted as both a debt payment AND a purchase expense.</li>
-          <li><strong>Action-Gated Proposal Generation:</strong> Ensures the agent answers educational questions without prematurely creating financial proposal cards unless explicitly requested.</li>
-          <li><strong>Zero Unintended Money Transfers:</strong> Enforces the "Suggest &amp; Confirm" model—confirmations save proposals visually in the "Actions" pane without triggering real automated bank movements.</li>
+          <li><strong>Respect account selection:</strong> Treat an unselected account as unavailable, not as an account with a zero balance. The instructions told Compass not to use or reveal information from accounts the user had not selected.</li>
+          <li><strong>Avoid counting the same spending twice:</strong> Distinguish purchases from credit card repayments so moving money to pay a card would not also appear as a new purchase expense.</li>
+          <li><strong>Keep questions separate from proposals:</strong> Answer informational questions without creating a plan card automatically. Create a proposal when the user requests or agrees to one.</li>
+          <li><strong>Clarify what approval means:</strong> In this prototype, approval saves a proposal in the Actions panel. It does not execute a bank transfer.</li>
         </ul>
+        <p class="case-note exploration-stage-note">These instructions defined the intended behavior. They were not a substitute for application-level permission checks or testing the agent’s responses.</p>
       </div>
       <figure class="case-figure">
-        <a class="agent-code-image" href="assets/compass-rules-configuration.webp" target="_blank" rel="noopener" aria-label="View Compass rules configuration at full size"><img src="assets/compass-rules-configuration.webp" alt="Phoenix Code rules.md editor showing selected account access, spending breakdown rules, double-counting prevention, and approval-gated proposals." width="1788" height="899" loading="lazy" decoding="async"></a>
+        <a class="agent-code-image" href="Assets/Compass/compass-rules-configuration.webp" target="_blank" rel="noopener" aria-label="View Compass rules configuration at full size"><img src="Assets/Compass/compass-rules-configuration.webp" alt="Phoenix Code rules.md editor showing selected account access, spending breakdown rules, double-counting prevention, and approval-gated proposals." width="1788" height="899" loading="lazy" decoding="async"></a>
         <figcaption class="case-mono">Compass / rules.md governance configuration. Select to view at full size.</figcaption>
       </figure>
     </section>
@@ -631,25 +543,22 @@
     <section class="case-block case-text-only" aria-labelledby="user-testing-title">
       <h2 id="user-testing-title" class="case-mono case-text-label">User Testing</h2>
       <div class="case-text-content">
-        <p>To validate usability and push the limits of the AI's logic, I conducted two rounds of user testing: a "stress test" with a senior designer and task-based testing with 5 participants across diverse backgrounds.</p>
-        <p class="architecture-decision-heading">Round 1: Expert Stress Test (Goal: "Break the Agent")</p>
+        <p>I tested the working prototype in two rounds: an exploratory session with a senior product designer, followed by task-based sessions with five participants from different academic and professional backgrounds. I wanted to understand both where the agent’s guidance fell short and whether people could reach and use it.</p>
+        <p class="architecture-decision-heading">An unexpected question exposed missing financial context</p>
         <ul>
-          <li><strong>Tester:</strong> 1 Senior Product Designer.</li>
-          <li><strong>Scenario:</strong> Plan a $750 car repair payoff strategy.</li>
-          <li><strong>Critical Edge-Case Discovery:</strong> The participant attempted to evaluate paying off the repair using their credit card. While Compass had read-only access to the Visa account, <strong>it was unaware of APR interest rates and credit limit mechanics</strong>, rendering its credit payoff advice incomplete.</li>
-          <li><strong>Engineering Fixes Implemented:</strong>
-            <ol>
-              <li><strong>Credit Logic Integration:</strong> Instructed Codex to inject realistic Wells Fargo APR interest rates and credit limit parameters into the Visa account model.</li>
-              <li><strong>Strict Permission Enforcement:</strong> Hardcoded system logic ensuring Compass <em>only</em> queries account data explicitly opted into during the user's onboarding survey.</li>
-            </ol>
-          </li>
+          <li><strong>The task:</strong> A senior product designer explored how to plan for a $750 car repair and considered using a credit card rather than saving the full amount upfront.</li>
+          <li><strong>What I observed:</strong> Compass could reference the synthetic Visa account, but its account model lacked APR and credit-limit details. That left it without important context for comparing a credit-funded option.</li>
+          <li><strong>What I changed:</strong> I used Codex to help add example APR and credit-limit parameters to the synthetic account model and refine account-selection handling so the prototype used only the accounts the user had chosen to share.</li>
+          <li><strong>What I learned:</strong> Supporting a savings scenario was not enough. The experience also needed to account for alternative choices and make missing information visible rather than treating an incomplete answer as sufficient.</li>
         </ul>
-        <p class="architecture-decision-heading">Round 2: Multi-Disciplinary Testing (N=5) &amp; Navigation Friction</p>
+        <p class="architecture-decision-heading">People could use Compass, but struggled to find it</p>
         <ul>
-          <li><strong>Testers:</strong> 5 participants across different academic and professional disciplines.</li>
-          <li><strong>Core Insight:</strong> While all 5 participants successfully completed financial tasks once inside Compass, <strong>only 1 out of 5 was able to find the agent entry point from the main home screen</strong> without guidance.</li>
-          <li><strong>Path of Least Resistance Fix:</strong> Re-architected the main Wells Fargo homepage entry point using Codex—adding prominent top-level navigation triggers and contextual banners to create a clear, frictionless path to the Compass dashboard.</li>
+          <li><strong>The sessions:</strong> Five participants attempted financial tasks using the prototype.</li>
+          <li><strong>What I observed:</strong> All five completed the financial tasks once inside Compass, but only one found its entry point from the home screen without guidance.</li>
+          <li><strong>What I changed:</strong> I moved Compass into the main navigation and added a contextual Home-page banner with an Ask Compass button, creating more direct entry points than the original Help route.</li>
+          <li><strong>What remains to test:</strong> Whether new participants can discover Compass without assistance and understand that approving a proposal does not move money.</li>
         </ul>
+        <p class="case-note exploration-stage-note">These sessions identified issues to address in the prototype. A follow-up evaluation is still needed to assess the revised entry points.</p>
       </div>
     </section>
 
@@ -657,18 +566,18 @@
     <div class="case-block testing-comparison">
       <figure class="case-figure">
         <p class="case-mono testing-image-label">Before user testing</p>
-        <a href="assets/compass-entry-before.webp" target="_blank" rel="noopener" aria-label="View homepage before user testing at full size"><img src="assets/compass-entry-before.webp" alt="Original Wells Fargo homepage concept with Home, Rewards, Pay/Move, Help, and Profile navigation and account summary cards." width="2000" height="1579" loading="lazy" decoding="async"></a>
+        <a href="Assets/Compass/compass-entry-before.webp" target="_blank" rel="noopener" aria-label="View homepage before user testing at full size"><img src="Assets/Compass/compass-entry-before.webp" alt="Original Wells Fargo homepage concept with Home, Rewards, Pay/Move, Help, and Profile navigation and account summary cards." width="2000" height="1579" loading="lazy" decoding="async"></a>
         <figcaption class="case-mono">Original entry / Compass accessed through Help.</figcaption>
       </figure>
       <figure class="case-figure">
         <p class="case-mono testing-image-label">After user testing</p>
-        <a href="assets/compass-entry-after.webp" target="_blank" rel="noopener" aria-label="View homepage after user testing at full size"><img src="assets/compass-entry-after.webp" alt="Revised homepage with a dedicated Compass navigation link and a prominent financial guide banner with an Ask Compass button beneath the account cards." width="1919" height="1515" loading="lazy" decoding="async"></a>
+        <a href="Assets/Compass/compass-entry-after.webp" target="_blank" rel="noopener" aria-label="View homepage after user testing at full size"><img src="Assets/Compass/compass-entry-after.webp" alt="Revised homepage with a dedicated Compass navigation link and a prominent financial guide banner with an Ask Compass button beneath the account cards." width="1919" height="1515" loading="lazy" decoding="async"></a>
         <figcaption class="case-mono">Revised entry / Dedicated navigation and contextual Ask Compass banner.</figcaption>
       </figure>
     </div>
 
     <!-- SECTION MARKER: update the next chapter title when ready. -->
-    <div class="case-block-label case-mono case-chapter-marker"><span>Compass / Product overview</span><span>05 / Live Prototype</span></div>
+    <div class="case-block-label case-mono case-chapter-marker"><span>Compass / Product overview</span><span>05 / Prototype Walkthrough</span></div>
 
     <section class="case-block final-walkthrough" aria-labelledby="final-walkthrough-title">
       <div class="case-text-only walkthrough-heading">
@@ -676,15 +585,15 @@
       </div>
       <div class="case-text-only walkthrough-description">
         <div class="case-text-content">
-          <p>Here is the complete end-to-end user experience in action—demonstrating a user navigating from the home dashboard into Compass, requesting a car repair savings plan, inspecting the step-by-step math reasoning, and approving the resulting artifact card.</p>
+          <p>Follow Santiago from the home dashboard into Compass as he asks for help saving toward a car repair, reviews the calculations behind a recommendation, and approves a proposed plan.</p>
         </div>
       </div>
 
       <figure class="case-figure walkthrough-media">
         <div class="case-media case-media-wide">
           <video controls playsinline preload="metadata" aria-label="Compass end-to-end final walkthrough">
-            <source src="assets/compass-final-walkthrough.mp4" type="video/mp4">
-            Your browser does not support embedded video. <a href="assets/compass-final-walkthrough.mp4">Watch the final walkthrough</a>.
+            <source src="Assets/Compass/compass-final-walkthrough.mp4" type="video/mp4">
+            Your browser does not support embedded video. <a href="Assets/Compass/compass-final-walkthrough.mp4">Watch the final walkthrough</a>.
           </video>
         </div>
       </figure>
@@ -694,19 +603,20 @@
     <div class="case-block-label case-mono case-chapter-marker"><span>Compass / Product overview</span><span>06 / Reflection</span></div>
 
     <section class="case-block case-text-only" aria-labelledby="learnings-next-steps-title">
-      <h2 id="learnings-next-steps-title" class="case-mono case-text-label">Learnings and Next Steps</h2>
+      <h2 id="learnings-next-steps-title" class="case-mono case-text-label">Reflection and Next Steps</h2>
       <div class="case-text-content">
         <p class="architecture-decision-heading">Key Learnings</p>
         <ul>
-          <li><strong>A useful feature must also be easy to find:</strong> During initial testing, users struggled to discover Compass when it was placed under "Help," as that location made it feel like passive customer support rather than a proactive financial planning tool. Moving Compass into the main navigation and adding an entry card on the Home page resolved this friction, establishing a clearer path of least resistance.</li>
-          <li><strong>Financial guidance requires clear context:</strong> Testing revealed that spending totals could be misleading when they included checking transactions but excluded credit card purchases. Compass was refined to strictly use accounts selected by the user while distinguishing debit spending from credit spending—reinforcing the importance of explicit data grounding and transparent source information.</li>
-          <li><strong>Recommendations and actions need distinct stages:</strong> Users needed a clear transition from discussing a goal to reviewing a proposal. By separating these stages—having Compass explain its recommendation in chat, letting the user request a formal plan, and rendering the proposal in the Actions panel for explicit approval or decline—the interaction model became structured and trustworthy.</li>
+          <li><strong>A useful feature must also be easy to find:</strong> Only one of five participants found Compass from the home screen without guidance. This showed me that the entry point was part of the experience, not a detail to resolve after designing the agent. I added direct navigation and a Home-page banner, but those changes still need a follow-up test.</li>
+          <li><strong>Financial guidance depends on its context:</strong> The credit-card repair scenario exposed missing APR and credit-limit information. I learned to question what data supported an answer and to make account sources, assumptions, and missing information visible.</li>
+          <li><strong>Designing an AI experience means designing behavior:</strong> Screens alone could not account for unexpected questions or an agent overstating its capabilities. Building the prototype helped me see why a conversation, a recommendation, and approval of a proposal needed distinct stages.</li>
+          <li><strong>A focused scope made the project more useful to evaluate:</strong> I narrowed the prototype to discussing goals, inspecting calculations, and reviewing proposals rather than simulating money transfers. That kept the work centered on the interaction I wanted to explore.</li>
         </ul>
-        <p class="architecture-decision-heading">Reflection</p>
+        <p class="architecture-decision-heading">Next Steps</p>
         <ul>
-          <li><strong>Designing Compass meant designing behavior, not just screens:</strong> The interface needed to account for unanticipated user paths, such as choosing to finance a repair with a credit card instead of saving cash upfront. Those edge cases pushed the project beyond standard happy-path screen designs into defining system behavior, handling missing data, and managing risk.</li>
-          <li><strong>A focused prototype prioritized the core experience:</strong> While simulated bank transfers were initially explored, they added scope complexity without improving the core validation goals. Narrowing the functional scope to reviewing, understanding, and approving future financial proposals kept the prototype focused on the most critical user-agent interaction loops.</li>
-          <li><strong>Validating future refinements:</strong> The next evaluation phase would focus on testing whether unassisted users can consistently discover Compass, verify which accounts inform its answers, and distinguish approving a proposal from executing a live money transfer. Additionally, future tests would measure whether expandable mathematical explanations help users critically assess recommendations rather than blindly accepting them.</li>
+          <li><strong>Retest discovery:</strong> Ask new participants to find Compass from the home screen without guidance and observe whether the revised navigation and banner help them reach it.</li>
+          <li><strong>Check understanding of permissions and approval:</strong> Ask participants to identify which accounts inform a response and explain what approving a proposal does. Use any confusion to refine labels and feedback.</li>
+          <li><strong>Evaluate the calculation breakdowns:</strong> Test whether participants can identify the assumptions behind a recommendation, notice missing information, and question an unsuitable plan rather than simply accepting the answer.</li>
         </ul>
       </div>
     </section>
@@ -931,6 +841,54 @@
           }
         }
         frame = requestAnimationFrame(step);
+      });
+    })();
+  </script>
+  <dialog class="case-image-preview" aria-label="Enlarged image">
+    <button class="case-image-preview-close" type="button" autofocus>Close ×</button>
+    <img alt="">
+  </dialog>
+  <script>
+    (() => {
+      const preview = document.querySelector('.case-image-preview');
+      const enlarged = preview.querySelector('img');
+      let opener;
+      document.querySelectorAll('#case-main img').forEach((image) => {
+        let trigger = image.closest('a');
+        if (!trigger) {
+          trigger = image;
+          trigger.tabIndex = 0;
+          trigger.setAttribute('role', 'button');
+          trigger.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter' || event.key === ' ') {
+              event.preventDefault();
+              trigger.click();
+            }
+          });
+        }
+        trigger.classList.add('case-image-trigger');
+        trigger.setAttribute('aria-label', 'Enlarge image: ' + image.alt);
+        trigger.setAttribute('aria-haspopup', 'dialog');
+        trigger.removeAttribute('target');
+        trigger.addEventListener('click', (event) => {
+          event.preventDefault();
+          opener = trigger;
+          enlarged.src = image.currentSrc || image.src;
+          enlarged.alt = image.alt;
+          preview.showModal();
+          preview.scrollTop = 0;
+        });
+      });
+      preview.querySelector('button').addEventListener('click', () => preview.close());
+      preview.addEventListener('click', (event) => {
+        if (event.target !== preview) return;
+        const bounds = preview.getBoundingClientRect();
+        if (event.clientX < bounds.left || event.clientX > bounds.right ||
+            event.clientY < bounds.top || event.clientY > bounds.bottom) preview.close();
+      });
+      preview.addEventListener('close', () => {
+        enlarged.removeAttribute('src');
+        opener?.focus({ preventScroll: true });
       });
     })();
   </script>

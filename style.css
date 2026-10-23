@@ -1345,3 +1345,307 @@ html:has(.case-study-page) {
 
 /* Reduce background compositing work during the long return-to-top scroll. */
 .returning-to-top .atmosphere i, .returning-to-top .atmosphere::after { animation-play-state: paused; }
+
+/* Separate the two narrative paragraphs in the project introduction. */
+.case-summary > p:not(.case-mono):not(.case-note) + p:not(.case-note) { margin-top: 20px; }
+
+/* Context narrative stays in primary white; supporting notes remain muted. */
+.case-study-page section[aria-labelledby="text-chapter-title"] .case-text-content > p:not(.case-note) {
+  color: var(--text);
+}
+
+/* Context notes attach to their preceding lists rather than reading as chapters. */
+.case-study-page section[aria-labelledby="text-chapter-title"] .case-text-content > .case-note {
+  margin: 12px 0 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 1.55;
+  letter-spacing: 0;
+  color: var(--muted);
+  max-width: 62ch;
+}
+.case-study-page section[aria-labelledby="text-chapter-title"] .case-note + .case-data-label {
+  margin-top: clamp(48px, 5vw, 80px);
+}
+
+/* Italic supporting notes in Context & Problem. */
+.case-study-page section[aria-labelledby="text-chapter-title"] .case-text-content > .case-note {
+  font-style: italic;
+}
+
+/* Published research findings read as separate paragraphs, not a checklist. */
+.context-research-findings { font-size: clamp(18px, 1.5vw, 25px); line-height: 1.4; letter-spacing: -.025em; }
+.context-research-findings > p + p { margin-top: 24px; }
+
+/* Survey narrative and design responses, replacing the earlier bullet lists. */
+.case-study-page .case-survey-split p.survey-finding-body,
+.case-study-page .case-survey-split p.survey-design-response {
+  font-size: clamp(18px, 1.5vw, 25px);
+  line-height: 1.4;
+  letter-spacing: -.025em;
+  color: var(--text);
+  max-width: none;
+  margin: 0;
+}
+.case-study-page .case-survey-split p.survey-design-response { margin-top: 24px; }
+.case-study-page .survey-method-note {
+  margin-top: 12px;
+  font-size: 13px;
+  line-height: 1.55;
+  letter-spacing: 0;
+  font-style: italic;
+  max-width: 62ch;
+  color: var(--muted);
+}
+
+/* Research-informed scenario persona: readable narrative and supporting notes. */
+.case-study-page .case-persona .case-block-copy > p:not(.case-note) { color: var(--text); }
+.case-study-page .case-persona .persona-scenario-note {
+  margin: 12px 0 24px; font-size: 13px; line-height: 1.55;
+  letter-spacing: 0; font-style: italic; color: var(--muted);
+}
+.persona-profile { margin-top: 24px; }
+.persona-portrait-note {
+  display: block; margin-top: 10px; font-size: 12px; line-height: 1.5;
+  font-style: italic; text-transform: none; letter-spacing: 0;
+}
+
+/* Connect the persona-needs lead-in to its list with comfortable spacing. */
+section[aria-labelledby="persona-goal-title"] .case-text-content > p + ul {
+  margin-top: 20px;
+}
+
+/* =====================================================================
+   CASE-STUDY SPACING SYSTEM
+   One parent-controlled gap replaces accumulated section margins.
+   Horizontal alignment, media sizes, and homepage styles stay unchanged.
+   ===================================================================== */
+.case-study-page {
+  --case-space-section: clamp(56px, 6vw, 96px);
+  --case-space-subsection: clamp(36px, 4vw, 56px);
+  --case-space-heading: 24px;
+  --case-space-paragraph: 24px;
+  --case-space-media: 40px;
+  --case-space-note: 12px;
+}
+.case-study-page #case-main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--case-space-section);
+}
+.case-study-page #case-main > .case-block,
+.case-study-page #case-main > .case-chapter-marker {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* Split layouts should not add another vertical inset to their text or images. */
+.case-study-page #case-main > .case-split > .case-block-copy,
+.case-study-page #case-main > .case-split > .case-landscape-figure,
+.case-study-page #case-main > .case-persona > .persona-visual-column {
+  padding-top: 0;
+}
+.case-study-page #case-main .case-text-only { row-gap: var(--case-space-heading); }
+.case-study-page #case-main .case-text-content > h3.case-data-label,
+.case-study-page #case-main .case-note + h3.case-data-label,
+.case-study-page #case-main .case-persona h3.persona-label {
+  margin-top: var(--case-space-subsection);
+  margin-bottom: var(--case-space-heading);
+}
+.case-study-page #case-main .case-text-content > p.architecture-decision-heading,
+.case-study-page #case-main .case-text-content > p.empathy-body-heading,
+.case-study-page #case-main .case-agent-behavior h3.agent-prompt-heading {
+  margin-top: var(--case-space-subsection);
+  margin-bottom: var(--case-space-heading);
+}
+.case-study-page #case-main .case-text-content > p.architecture-decision-heading:first-child,
+.case-study-page #case-main .case-text-content > p.empathy-body-heading:first-child,
+.case-study-page #case-main .agent-grounding-copy > h3:first-child {
+  margin-top: 0;
+}
+.case-study-page #case-main .case-text-content > p + p:not(.case-note),
+.case-study-page #case-main .case-text-content > p + ul,
+.case-study-page #case-main .context-research-findings > p + p {
+  margin-top: var(--case-space-paragraph);
+}
+.case-study-page #case-main .case-text-content > .case-note,
+.case-study-page #case-main .persona-scenario-note {
+  margin-top: var(--case-space-note);
+}
+.case-study-page #case-main .case-agent-behavior { row-gap: var(--case-space-media); }
+.case-study-page #case-main .case-agent-behavior .agent-grounding-copy { padding-top: 0; }
+.case-study-page #case-main .walkthrough-heading { margin-bottom: var(--case-space-heading); }
+.case-study-page #case-main .walkthrough-description { margin-bottom: var(--case-space-media); }
+.case-study-page #case-main .walkthrough-media { margin-bottom: 0; }
+.case-study-page #case-main .survey-insights-grid { row-gap: var(--case-space-subsection); }
+.case-study-page #case-main .case-survey-split .case-block-copy > h3 {
+  margin-top: var(--case-space-subsection);
+  margin-bottom: var(--case-space-heading);
+}
+.case-study-page #case-main .survey-insight > h3 { margin: 0 0 var(--case-space-heading); }
+.case-study-page #case-main .empathy-pain-point + .empathy-pain-point { margin-top: var(--case-space-subsection); }
+/* The opening marker follows its hero media inside the same showcase block. */
+.case-study-page #case-main .case-showcase .case-block-label { margin-top: var(--case-space-media); }
+.case-study-page .case-footer { margin-top: var(--case-space-section); }
+
+/* Persona narrative continues into its goal without a full chapter-sized gap. */
+.case-study-page #case-main > .case-persona + section[aria-labelledby="persona-goal-title"] {
+  margin-top: calc(32px - var(--case-space-section));
+}
+
+/* Research synthesis uses the same note and list rhythm as earlier findings. */
+.case-study-page .case-empathy .empathy-scenario-note {
+  margin-top: 12px;
+  font-size: 13px;
+  line-height: 1.55;
+  letter-spacing: 0;
+  font-style: italic;
+  color: var(--muted);
+}
+.case-empathy .research-design-questions {
+  margin: 24px 0 0;
+  padding-left: 22px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -.025em;
+}
+.case-empathy .research-design-questions > li + li { margin-top: 16px; }
+
+.case-empathy .empathy-summary-list { margin-top: 24px; }
+
+/* Flow reflection follows the decision list as part of the main narrative. */
+.case-text-content > p.flow-assumption-note { margin-top: 24px; color: var(--text); }
+
+/* Supporting note connects early sketch exploration to the grayscale prototype. */
+.case-study-page .exploration-stage-note {
+  margin-top: 12px;
+  font-size: 13px;
+  line-height: 1.55;
+  letter-spacing: 0;
+  font-style: italic;
+  color: var(--muted);
+}
+
+/* Agent iteration narrative: primary text and consistent space around its list. */
+.case-study-page .case-agent-behavior .case-block-copy > p:not(.case-note) { color: var(--text); }
+.case-study-page .case-agent-behavior .case-block-copy > p + ul,
+.case-study-page .case-agent-behavior .case-block-copy > ul + p { margin-top: 24px; }
+
+/* The implementation role statement stays at primary body-text contrast. */
+.case-study-page .case-text-content > p.implementation-role { color: var(--text); }
+
+/* Compass horizontal layout: one narrative edge and one outer media gutter. */
+.case-study-page {
+  --case-reading-offset: clamp(40px, 14vw, 240px);
+  --case-reading-width: 760px;
+  --case-column-gap: clamp(32px, 4vw, 72px);
+}
+.case-study-page .case-text-only {
+  padding-left: calc(var(--edge) + var(--case-reading-offset));
+  padding-right: var(--edge);
+  grid-template-columns: minmax(0, 1fr);
+}
+.case-study-page .case-text-content {
+  width: 100%;
+  max-width: var(--case-reading-width);
+  min-width: 0;
+  padding-right: 0;
+}
+.case-study-page .case-summary-grid,
+.case-study-page .case-split {
+  padding-left: calc(var(--edge) + var(--case-reading-offset));
+  padding-right: var(--edge);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: var(--case-column-gap);
+}
+.case-study-page .case-summary,
+.case-study-page .case-block-copy {
+  min-width: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.case-study-page .survey-insights-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: var(--case-column-gap);
+}
+.case-study-page .survey-insight:first-child { padding-left: 0; }
+/* Stacked technical screenshots stay wide; their copy follows the narrative. */
+.case-study-page .case-agent-behavior {
+  padding-left: var(--edge);
+  padding-right: var(--edge);
+  grid-template-columns: minmax(0, 1fr);
+}
+.case-study-page .case-agent-behavior .case-block-copy {
+  margin-left: var(--case-reading-offset);
+  width: calc(100% - var(--case-reading-offset));
+  max-width: var(--case-reading-width);
+  padding-left: 0;
+  padding-right: 0;
+}
+@media (max-width: 900px) {
+  .case-study-page { --case-reading-offset: 0px; }
+  .case-study-page .case-summary-grid,
+  .case-study-page .case-split,
+  .case-study-page .survey-insights-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .case-study-page .case-summary-grid,
+  .case-study-page .case-split { row-gap: 40px; }
+}
+
+/* Integrate standalone media with the narrative instead of filling the window. */
+.case-study-page .case-showcase > .case-figure,
+.case-study-page .task-flow-image-figure,
+.case-study-page .sketch-slideshow,
+.case-study-page .lowfi-viewer,
+.case-study-page .implementation-image,
+.case-study-page .testing-comparison,
+.case-study-page .walkthrough-media {
+  width: min(var(--case-reading-width), calc(100% - 2 * var(--edge) - var(--case-reading-offset)));
+  max-width: var(--case-reading-width);
+  margin-left: calc(var(--edge) + var(--case-reading-offset));
+  margin-right: var(--edge);
+  min-width: 0;
+}
+/* Technical figures sit inside a container that already supplies the gutter. */
+.case-study-page .case-agent-behavior > .case-figure {
+  width: min(var(--case-reading-width), calc(100% - var(--case-reading-offset)));
+  max-width: var(--case-reading-width);
+  margin-left: var(--case-reading-offset);
+  margin-right: 0;
+}
+
+/* Same-page image preview with native modal focus and keyboard handling. */
+.case-image-trigger { cursor: zoom-in; }
+button.case-image-trigger { display: block; width: 100%; padding: 0; border: 0; background: transparent; color: inherit; }
+.case-image-trigger:focus-visible { outline: 2px solid var(--text); outline-offset: 4px; }
+.case-image-preview {
+  position: fixed;
+  inset: 0;
+  width: min(1400px, 94vw);
+  max-width: 94vw;
+  height: fit-content;
+  max-height: 90svh;
+  margin: auto;
+  padding: 56px 20px 20px;
+  border: 1px solid #555;
+  border-radius: 10px;
+  background: #151515;
+  color: white;
+  overflow: auto;
+}
+.case-image-preview::backdrop { background: rgb(0 0 0 / .85); }
+.case-image-preview img { display: block; width: 100%; height: auto; }
+.case-image-preview-close {
+  position: sticky;
+  top: 0;
+  display: block;
+  margin: -42px 0 18px auto;
+  padding: 8px 14px;
+  border: 1px solid #777;
+  border-radius: 24px;
+  background: #151515;
+  color: white;
+  font: inherit;
+  cursor: pointer;
+}
+body:has(.case-image-preview[open]) { overflow: hidden; }
